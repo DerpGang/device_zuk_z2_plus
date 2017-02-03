@@ -165,10 +165,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0.vendor \
     libqdMetaData.system
 
-# Doze mode
-#PRODUCT_PACKAGES += \
- #   ZukDoze
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calib.cfg:system/etc/calib.cfg
 
