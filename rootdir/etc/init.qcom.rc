@@ -85,6 +85,8 @@ on post-fs-data
     wait_for_prop vendor.sys.listeners.registered true
     write /dev/ipa 1
 
+    write /sys/class/graphics/fb0/idle_time 100
+
     mkdir /data/vendor/misc 01771 system system
 
     # Allow writing to the kernel trace log.
