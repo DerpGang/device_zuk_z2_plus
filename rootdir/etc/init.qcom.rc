@@ -441,6 +441,13 @@ on property:sys.boot_completed=1
     # CPE fw_name used by sound trigger HAL
     chown media audio /sys/kernel/wcd_cpe0/fw_name
 
+on property:vold.decrypt=trigger_reset_main
+    stop audio-hal-2-0
+
+on property:vold.decrypt=trigger_restart_framework
+    start audio-hal-2-0
+    start config_bt_addr
+
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
