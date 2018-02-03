@@ -175,11 +175,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
-# Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so \
-    vendor.perf.gestureflingboost.enable=true
-
 # Disable iorapd
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.iorapd.enable=false
