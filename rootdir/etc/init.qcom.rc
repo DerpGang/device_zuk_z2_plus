@@ -441,19 +441,6 @@ on property:sys.boot_completed=1
     # CPE fw_name used by sound trigger HAL
     chown media audio /sys/kernel/wcd_cpe0/fw_name
 
-on property:vold.decrypt=trigger_reset_main
-    stop audio-hal-2-0
-
-on property:vold.decrypt=trigger_shutdown_framework
-    stop audio-hal-2-0
-
-on property:vold.decrypt=trigger_restart_min_framework
-    start audio-hal-2-0
-
-on property:vold.decrypt=trigger_restart_framework
-    start audio-hal-2-0
-    start config_bt_addr
-
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
@@ -703,3 +690,16 @@ write /sys/kernel/debug/msm_subsys/slpi restart
 
 on property:apexd.status=ready
     mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
+
+on property:vold.decrypt=trigger_reset_main
+    stop audio-hal-2-0
+on property:vold.decrypt=trigger_shutdown_framework
+    stop audio-hal-2-0
+on property:vold.decrypt=trigger_restart_min_framework
+    start time_daemon
+    start audio-hal-2-0
+
+on property:vold.decrypt=trigger_restart_framework
+    start audio-hal-2-0
+    stop vendor.camera-provider-2-4
+    start vendor.camera-provider-2-4
