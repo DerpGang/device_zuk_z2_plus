@@ -90,7 +90,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    tinymix \
     libnl
 
 PRODUCT_COPY_FILES += \
