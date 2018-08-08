@@ -205,6 +205,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # RIL
 PROTOBUF_SUPPORTED := true
+DISABLE_RILD_OEM_HOOK := true
 
 # SELinux
 #-include device/qcom/sepolicy/sepolicy.mk
