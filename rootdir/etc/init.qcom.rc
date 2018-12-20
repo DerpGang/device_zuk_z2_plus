@@ -108,9 +108,6 @@ on post-fs-data
     mkdir /data/tombstones/wcnss 0771 system system
     mkdir /data/tombstones/dsps 0771 system system
 
-    # Create directory for tftp
-    mkdir /data/vendor/tombstones 0771 system system
-
     # Create folder for mm-qcamera-daemon
     mkdir /data/misc/camera 0770 camera camera
     mkdir /data/vendor/camera 0770 camera camera
