@@ -329,12 +329,11 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.perf</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
             <name>IPerf</name>
             <instance>default</instance>
         </interface>
-	<fqname>@1.0::IPerf/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
@@ -434,16 +433,6 @@
             <instance>default</instance>
         </interface>
 </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.iop</name>
-        <transport>hwbinder</transport>
-	<version>2.0</version>
-        <interface>
-            <name>IIop</name>
-            <instance>default</instance>
-        </interface>
-	<fqname>@2.0::IIop/default</fqname>
-    </hal>
 <hal format="hidl">
         <name>vendor.display.color</name>
         <transport>hwbinder</transport>
@@ -495,15 +484,6 @@
         <version>1.0</version>
         <interface>
             <name>IBluetoothHci</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.iop</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IIop</name>
             <instance>default</instance>
         </interface>
     </hal>
