@@ -137,6 +137,7 @@ TARGET_USES_HWC2 := true
 TARGET_USES_COLOR_METADATA := true
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
+TARGET_SCREEN_DENSITY := 410
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
