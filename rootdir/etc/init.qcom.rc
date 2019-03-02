@@ -396,7 +396,15 @@ service bt-sh /vendor/bin/init.bt.sh
     disabled
     oneshot
 
+service wlan-sh /vendor/bin/init.wlan.sh
+    class late_start
+    user root
+    group root
+    disabled
+    oneshot
+
 on property:sys.boot_completed=1
+    start wlan-sh
     start bt-sh
     start qcom-post-boot
 
