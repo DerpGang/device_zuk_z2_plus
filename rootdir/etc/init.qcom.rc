@@ -389,8 +389,21 @@ service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
     user root
     oneshot
 
+service bt-sh /vendor/bin/init.bt.sh
+    class late_start
+    user bluetooth
+    group bluetooth
+    disabled
+    oneshot
+
 on property:sys.boot_completed=1
+    start bt-sh
     start qcom-post-boot
+
+on property:ro.vendor.bt.bdaddr_path=/data/vendor/bluetooth/bdaddr
+    # Correct perms for bdaddr
+    chmod 0644  /data/vendor/bluetooth/bdaddr
+    chown bluetooth bluetooth /data/vendor/bluetooth/bdaddr
 
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.qcom
