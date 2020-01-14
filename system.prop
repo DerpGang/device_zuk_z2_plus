@@ -46,6 +46,7 @@ ro.use_data_netmgrd=true
 persist.data.iwlan.enable=true
 ro.telephony.default_network=9,1
 ro.telephony.call_ring.multiple=false
+ro.telephony.use_old_mnc_mcc_format=true
 
 # Device was launched with M
 ro.product.first_api_level=23
