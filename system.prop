@@ -180,6 +180,7 @@ sys.usb.rndis.func.name=rndis_bam
 dalvik.vm.heapstartsize=16m
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapsize=512m
+dalvik.vm.dex2oat64.enabled=true
 
 #property to specify the number of frames to skip before setting hint
 sdm.perf_hint_window=50
