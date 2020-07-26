@@ -84,6 +84,8 @@ ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
