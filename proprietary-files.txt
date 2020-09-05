@@ -44,6 +44,16 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 
+# Soundfx - from LA.UM.8.6.r1-04400-89xx.0
+vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libqcbassboost.so
+vendor/lib/soundfx/libqcreverb.so
+vendor/lib/soundfx/libqcvirt.so
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libqcbassboost.so
+vendor/lib64/soundfx/libqcreverb.so
+vendor/lib64/soundfx/libqcvirt.so
+
 # ACDB
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
@@ -333,30 +343,32 @@ vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
 vendor/lib64/libdpmqmihal.so|25d74c0e867f023b71a7c599ab6d213c7de2725d
 
-# DRM and SEE - from LA.UM.7.5.r1-04800-8x96.0
-vendor/bin/qseecomd|191536bdf3d72238ea7b3ca54b4289b7a09b4bcd
-vendor/lib64/libGPreqcancel.so|db98eea9ef308792e3b9d48b933b5a5debf1af9e
-vendor/lib64/libGPreqcancel_svc.so|1059a83dda327cae9abc10bda0b8a8c526b9760d
-vendor/lib64/libQSEEComAPI.so|c2562b6f2b6e9e2a30c72f0638ae0c16365c0022
-vendor/lib64/libSecureUILib.so|5c9a1e16311a475ff79a1ae541b73216c7096d55
-vendor/lib64/libStDrvInt.so|768602d8b0c04ff8d09ebcf010c19ccb589dc4a7
-vendor/lib64/libdrmfs.so|87526b8b660fc8c27f0c07f1ac2d0d36544ae624
-vendor/lib64/libdrmtime.so|110b8a263128288b056183ba064b0ab2f6343fab
-vendor/lib64/libqisl.so|1f1523c03daffa9e1cd45d96d212d2fa8c1b5790
-vendor/lib64/librpmb.so|9f88e88cd8155b69a085548a60a15c5b5be70f48
-vendor/lib64/libsecureui.so|faebf24607e983faa09d27df36408dab2db2217e
-vendor/lib64/libsecureui_svcsock.so|52dcb894e9061438522dd22fa2e3d7efc708fade
-vendor/lib64/libssd.so|a3b4f5c81b96966f8d2a1a2f8518522f223e73fb
-vendor/lib/libQSEEComAPI.so|ca74ebd4225afbb8fd02ea72cd0c04303da9c2f2
+# DRM and SEE - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/qseecomd
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libqisl.so
+vendor/lib64/librpmb.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libssd.so
+vendor/lib/libQSEEComAPI.so
 
 # Fingerprint
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 lib64/hw/fingerprint.qcom.so:vendor/lib64/hw/fingerprint.qcom.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
-# Gatekeeper - from LA.UM.7.5.r1-04800-8x96.0
-vendor/lib64/hw/gatekeeper.msm8996.so|d324fd57026ac20409c474cfc4e15595aa9d4738
-vendor/lib/hw/gatekeeper.msm8996.so|a1e3756cb6e42f869ae1997028eaa9159478525b
+# Gatekeeper - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GPS - from daisy - daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
 etc/permissions/com.qti.location.sdk.xml|cb68a566bd77dcc75bb7547199d528289fac01cb
@@ -526,9 +538,13 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|776501883a6bf1b3e8fd33c0da5ec1eb742
 # IPA
 vendor/bin/ipacm-diag
 
-# Keystore - from LA.UM.7.5.r1-04800-8x96.0
-vendor/lib64/hw/keystore.msm8996.so|e4139ac911fd0aafa73bd2901ab273c04c99ccc9
-vendor/lib/hw/keystore.msm8996.so|89131975b593a2d3551808f950905c3b83bb6d73
+# Keystore - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib/libkeymasterdeviceutils.so
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib64/libkeymasterdeviceutils.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8996.so
@@ -595,11 +611,11 @@ vendor/etc/perf/perfboostsconfig.xml|03995c6cb20440b8af226b0930d542b3a4257947
 vendor/etc/perf/targetconfig.xml|b2ea39d05d52364774dbd390732cb5f29ae14941
 vendor/etc/perf/targetresourceconfigs.xml|478715f7bcb07e08e62be023ac0b6302ef65bdb3
 
-# Peripheral manager - from daisy - daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
-vendor/bin/pm-proxy|1f216a6f54e9b97c026f3f3bc4d7d441d58d90a7
-vendor/bin/pm-service|8a521f14576d0d2edf03b4500a54379d37e15d4e
-vendor/lib64/libperipheral_client.so|20c8ab21fe28e41f60b59af0ba72de9f6b1996d2
-vendor/lib/libperipheral_client.so|b75a6adac094ddcd6ded9415cae83e18d1e7e5d0
+# Peripheral manager - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/pm-proxy
+vendor/bin/pm-service
+vendor/lib64/libperipheral_client.so
+vendor/lib/libperipheral_client.so
 
 # Power-off alarm - from tissot - PKQ1.180917
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk|3fbc64ee84b17eaaf5f9002b58f4615216de0389
@@ -698,16 +714,18 @@ vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/netmgrd.rc|fd3457c69a9fab11b87d0d1b494188fe089684cd
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 
-# Sensors - from LA.UM.7.5.r1-04800-8x96.0
-vendor/bin/sensors.qti|18011d46135a2635bcfdc34e8b4d3fdaff7a76fb
-vendor/lib/hw/activity_recognition.msm8996.so|58878fbcf8e98a8f053c3d1fbaa1beb4d7776d12
-vendor/lib/libsensor1.so|d73573eca4e1eaf52f09f9cc7292cdc6d9d69c70
-vendor/lib/libsensor_reg.so|2d95cea1df93dcaae0f067157f6932c1381dec53
-vendor/lib/sensors.ssc.so|96a37b515969d72875debd9ee0a505406d75bd3c
-vendor/lib64/hw/activity_recognition.msm8996.so|c29a0dfff27824dac39a21f56a92bf319acb051b
-vendor/lib64/libsensor1.so|1934268e2f28ee9d705d5ff060544d06e42afcc3
-vendor/lib64/libsensor_reg.so|942fbf9ef1cfc87596f850e7ff1a86e7a9ddc846
-vendor/lib64/sensors.ssc.so|e49e3c585da09b323948e1c1201118d426f3d558
+# Sensors - from LA.UM.8.6.r1-04400-89xx.0
+vendor/bin/sensors.qti
+vendor/lib64/hw/activity_recognition.msm8953.so:vendor/lib64/hw/activity_recognition.msm8996.so
+vendor/lib64/libsensor1.so
+vendor/lib64/libsensor_reg.so
+vendor/lib64/libsensor_user_cal.so
+vendor/lib64/sensors.ssc.so
+vendor/lib/hw/activity_recognition.msm8953.so:vendor/lib/hw/activity_recognition.msm8996.so
+vendor/lib/libsensor1.so
+vendor/lib/libsensor_reg.so
+vendor/lib/libsensor_user_cal.so
+vendor/lib/sensors.ssc.so
 
 # Thermal - from LA.UM.7.5.r1-05300-8x96.0
 vendor/bin/thermal-engine|4ab3c410fbcf9f8cae711ea4ba16cd2797712de6
@@ -722,18 +740,18 @@ vendor/bin/time_daemon|75b8a6a14cfb4424499ccb2bf1cad011df295d0e
 vendor/lib/libtime_genoff.so|a574d287e7e73649685b702f4fe497eb7c6ba727
 vendor/lib64/libtime_genoff.so|06df52867790cdbbcc674a3a28d7ad7c8cc161ac
 
-# TUI - from - LA.UM.7.5.r1-04800-8x96.0
-lib/vendor.qti.hardware.tui_comm@1.0.so|df42c8c69f67adeecd682a3035bf8d2b5834cd25
-lib64/vendor.qti.hardware.tui_comm@1.0.so|5a794cd2180fc27d7a03d990e852f6600daf4b7f
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|924a815c5d1be0d821af10b9b11093a517f5e72f
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|df42c8c69f67adeecd682a3035bf8d2b5834cd25
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|5a794cd2180fc27d7a03d990e852f6600daf4b7f
+# TUI - from LA.UM.8.6.r1-04400-89xx.0
+product/lib/vendor.qti.hardware.tui_comm@1.0.so
+product/lib64/vendor.qti.hardware.tui_comm@1.0.so
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
-# Widevine - from daisy - PKQ1.180917
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine|9743c4ecd0fb8773795bcbfbb406f25616c04129
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
-vendor/lib64/libwvhidl.so|a3444ac0deb8144a08ba2ed1dad2f2369096c7af
+# DRM Widevine - from LA.UM.8.6.r1-03400-89xx.0
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib64/libwvhidl.so
 
 # WiFi Firmware
 etc/firmware/bdwlan30.bin:vendor/firmware/bdwlan30.bin
