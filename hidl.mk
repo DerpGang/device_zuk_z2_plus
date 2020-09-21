@@ -104,6 +104,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl:64 \
+    android.hardware.thermal@1.0-service \
+    thermal.msm8996
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0-java \
