@@ -224,6 +224,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.enableadvancedscan=false \
+    persist.vendor.radio.mt_sms_ack=30 \
     persist.vendor.radio.procedure_bytes=SKIP \
     persist.vendor.qti.telephony.vt_cam_interface=1
 
