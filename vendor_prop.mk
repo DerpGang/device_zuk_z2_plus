@@ -247,6 +247,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
 
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=true
+
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.backup.ntpServer=0.pool.ntp.org \
