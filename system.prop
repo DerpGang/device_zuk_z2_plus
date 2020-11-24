@@ -67,6 +67,10 @@ ro.qcom.ad.calib.data=/system/etc/calib.cfg
 ro.qcom.ad.sensortype=2
 vendor.gralloc.disable_ahardware_buffer=1
 
+# DPM
+persist.vendor.dpmhalservice.enable=1
+persist.vendor.dpm.feature=11
+
 # Fingerprint
 persist.qfp=false
 
