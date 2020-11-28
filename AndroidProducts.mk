@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-$(LOCAL_DIR)/nitrogen_z2_plus.mk
+$(LOCAL_DIR)/revengeos_z2_plus.mk
