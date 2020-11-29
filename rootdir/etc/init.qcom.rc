@@ -568,9 +568,9 @@ service thermal-engine /system/vendor/bin/thermal-engine -c ${sys.qcom.thermalcf
    socket thermal-send-rule stream 0660 system system
    group system root diag
 
-service adsprpcd /vendor/bin/adsprpcd
+service vendor.adsprpcd /system/vendor/bin/adsprpcd
     class main
-    user media
+    user system
     group media
     writepid /dev/cpuset/system-background/tasks
 
