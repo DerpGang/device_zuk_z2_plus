@@ -25,6 +25,7 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 
 # ArrowOS Properties
 DEVICE_MAINTAINER := PranavTemkar
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 PRODUCT_NAME := arrow_z2_plus
 PRODUCT_DEVICE := z2_plus
