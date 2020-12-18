@@ -34,6 +34,12 @@ ro.bluetooth.wipower=true
 
 # Camera
 camera.disable_zsl_mode=0
+persist.camera.mct.debug=0
+persist.camera.iface.logs=0
+persist.camera.imglib.logs=0
+persist.camera.isp.debug=0
+persist.camera.sensor.debug=0
+vendor.vidc.debug.level=0
 
 # Charger
 ro.charger.enable_suspend=true
