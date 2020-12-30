@@ -172,10 +172,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# Net
-PRODUCT_PACKAGES += \
-   libandroid_net
-
 # GPS
 PRODUCT_PACKAGES += \
     libbatching \
