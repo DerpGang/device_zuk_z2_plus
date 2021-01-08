@@ -120,6 +120,9 @@ vendor.perf.gestureflingboost.enable=true
 # Enable iorapd perfetto tracing for app starts
 iorapd.perfetto.enable=true
 
+# Enable iorapd readahead for app starts
+iorapd.readahead.enable=true
+
 # Radio
 DEVICE_PROVISIONED=1
 rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
