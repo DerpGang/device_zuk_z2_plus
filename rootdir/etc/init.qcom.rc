@@ -580,6 +580,9 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     disabled
     oneshot
 
+on property:dev.bootcomplete=1
+    restart ril-daemon
+
 # Start camera server as daemon
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class main
