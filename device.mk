@@ -313,10 +313,6 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor \
     libqti_vndfwk_detect.vendor
 
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
-
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.ccodec=0
 
