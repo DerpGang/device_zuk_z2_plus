@@ -510,7 +510,6 @@ vendor/lib64/libqmi_cci.so
 product/etc/permissions/embms.xml
 product/etc/permissions/lpa.xml
 product/framework/embmslibrary.jar
-product/framework/qti-telephony-common.jar
 product/framework/uimlpalibrary.jar
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -518,6 +517,9 @@ product/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/qcrilhook.jar
+
+# QSSI
+system_ext/framework/qti-telephony-common.jar
 
 # RIL - from LA.UM.8.6.r1-04400-89xx.0
 vendor/etc/init/dataadpl.rc
