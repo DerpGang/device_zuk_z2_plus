@@ -65,13 +65,6 @@ function blob_fixup() {
           sed -i 's|/system/etc/camera/|/vendor/etc/camera/|g' "${2}"
 
         ;;
-
-    # Assign all daemons to system-background cpuset
-    vendor/etc/init/*.rc)
-        vi -escwq "${2}"
-        echo "    writepid /dev/cpuset/system-background/tasks" >> "${2}"
-        ;;
-
     esac
 
 }
