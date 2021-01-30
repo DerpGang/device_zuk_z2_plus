@@ -587,6 +587,10 @@ vendor/firmware/a530v2_seq.fw2
 vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 
+# Protobuf - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/lib/libprotobuf-cpp-full-vendor-3.9.1.so
+vendor/lib64/libprotobuf-cpp-full-vendor-3.9.1.so
+
 # QMI - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/lib/libpdmapper.so|c8f48eeef2bcdabec913395fd698f29aa39ad18f
 vendor/lib/libqcci_legacy.so|39e27fbf8b3ed8f668ea701ac58a5d0a39513bb8
