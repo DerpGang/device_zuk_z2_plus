@@ -146,11 +146,12 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8996 \
     memtrack.msm8996 \
     libdisplayconfig \
+    libdisplayconfig.qti \
     libhwc2on1adapter \
     libgenlock \
     liboverlay \
     libtinyxml \
-    libdisplayconfig \
+    vendor.display.config@1.0.vendor \
     libqdMetaData.system
 
 # Doze mode
