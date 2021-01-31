@@ -337,42 +337,46 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.data.mwqem@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
-# DPM - from daisy - daisy_sprout:10/QKQ1.191002.002/V11.0.2.0.QDLMIXM
-product/bin/dpmd|cac8f3eadeeec202f56d5b5f7a8c75e82e376d9f
-product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
-product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
-product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
-product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
-product/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
-product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
-product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
-product/lib64/libdpmctmgr.so|7ee0d1d40a8fc7fea924602db13717235ed2c2aa
-product/lib64/libdpmfdmgr.so|cb0157da0ffe6827471662a5b7881e85165cb5aa
-product/lib64/libdpmtcm.so|a98ab3c419ebe49c6f3351ef4fa64ebda65d0e7d
--product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
-vendor/bin/dpmQmiMgr|a43829d478ebc243b5f7307b44aa501a7a3c8211
-vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe1950bb
-vendor/lib64/libdpmqmihal.so|25d74c0e867f023b71a7c599ab6d213c7de2725d
+# DPM - from LA.UM.9.6.2.r1-03600-89xx.0
+system_ext/bin/dpmd
+system_ext/etc/dpm/dpm.conf
+system_ext/etc/init/dpmd.rc
+system_ext/etc/permissions/com.qti.dpmframework.xml
+system_ext/etc/permissions/dpmapi.xml
+system_ext/framework/com.qti.dpmframework.jar
+system_ext/framework/dpmapi.jar
+system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
+system_ext/lib64/libdpmctmgr.so
+system_ext/lib64/libdpmfdmgr.so
+system_ext/lib64/libdpmtcm.so
+system_ext/lib64/libdpmframework.so
+-system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
+vendor/bin/dpmQmiMgr
+vendor/etc/init/dpmQmiMgr.rc
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+vendor/lib64/libdpmqmihal.so
 
-# DPM - from oneplus8 - qssi-user-11-RP1A.201005.001-2009051300-release-keys
-system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
+# DRM and SEE - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/qseecomd
+vendor/lib64/libGPreqcancel.so
+vendor/lib64/libGPreqcancel_svc.so
+vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libqisl.so
+vendor/lib64/librpmb.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libssd.so
+vendor/lib/libQSEEComAPI.so
 
-# DRM and SEE - from LA.UM.8.6.r1-04400-89xx.0
-vendor/bin/qseecomd|e43054ef83d7d27a0b1958c693ae07fdac6d73e0
-vendor/lib64/libGPreqcancel.so|6f59015f1e340dd1c995f0008a5f282037d98867
-vendor/lib64/libGPreqcancel_svc.so|84783ffc4dc45a6934a2c87166842fd1d6c73ebe
-vendor/lib64/libQSEEComAPI.so|050e9cac4b5bd3c2fd2babc4c567987d7c6ce46b
-vendor/lib64/libSecureUILib.so|9462ad202be6df615d008e3c72b2592dc8e20e41
-vendor/lib64/libStDrvInt.so|c5413acfc1eb7218c0cff4085c8116e91252acca
-vendor/lib64/libdrmfs.so|e72d79579f78501486fbd0883ee620fcb0b726ca
-vendor/lib64/libdrmtime.so|7eaed4940c68505b312d26b26585bfc93bbd8d54
-vendor/lib64/libqisl.so|491ac949ab488299c7a1ae4fe8257ec0a6f994b1
-vendor/lib64/librpmb.so|252757acda40774aebbcb29397eab514595f70db
-vendor/lib64/libsecureui.so|4e496259eb6da9b3dcf6fb744da897422350b6c7
-vendor/lib64/libsecureui_svcsock.so|060bbd76ead3b3aeb323af0c7352f9445088d3fe
-vendor/lib64/libssd.so|33d717f793c2579e3bd17b5ce6534cb68c12887d
-vendor/lib/libQSEEComAPI.so|cfc57d8022dbac5b20249e5ce7137b0834a208a0
+# DRM Widevine - from LA.UM.9.6.2.r1-02500-89xx.0
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
+vendor/lib64/libwvhidl.so
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 
 # Fingerprint
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
@@ -790,12 +794,6 @@ vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|05c0a47f24e38b14fc7c1
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|a8329c5dac4222743e3d229b901394f7ad4e352a
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|19932d88afdf0351d7bfb6dee19a171d85bc1fde
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|7343cf8a20fb8e72e17b014cda7b5ae85841354a
-
-# DRM Widevine - from LA.UM.8.6.r1-03400-89xx.0
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine|f4258fe902140e7a35c59f79d274dde89a80d1e8
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|03e9c1834f6d6c0b83ba372235845cbe744d61bd
-vendor/lib64/libwvhidl.so|1747b61cd6b6f7057e7682945fc4bcbf192ec57f
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 
 # WiFi Firmware
 etc/firmware/bdwlan30.bin:vendor/firmware/bdwlan30.bin
