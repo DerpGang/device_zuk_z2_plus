@@ -218,10 +218,6 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 
-#Power
-PRODUCT_PACKAGES += \
-     power.msm8996
-
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect
