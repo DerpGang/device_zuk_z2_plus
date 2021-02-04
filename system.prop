@@ -40,6 +40,7 @@ persist.camera.imglib.logs=0
 persist.camera.isp.debug=0
 persist.camera.sensor.debug=0
 vendor.vidc.debug.level=0
+ro.vendor.camera.provider24.disable_mem_init=1
 
 # Charger
 ro.charger.enable_suspend=true
