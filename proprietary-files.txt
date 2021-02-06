@@ -653,7 +653,6 @@ vendor/lib64/libqcrilFramework.so|da3c0216ddad60f48b1fc90b31a6d6d1114e95be
 vendor/lib64/libqsocket.so|391748e46f7dbbf267dbc5a5c89f0d2a8b4fca4e
 vendor/lib64/libril-qc-hal-qmi.so|75385897c070c56a8cc6d1864c06e5e113026ac8
 vendor/lib64/libril-qcril-hook-oem.so|dec0f4f4cd67c27fc0903e29c00964f9533b64ee
-vendor/lib64/librmnetctl.so|829848dabd3cc43b12a90864506e31a1b09f9bad
 vendor/lib64/libsettings.so|9fd41bd33421b6cedca5231393a8c1a9d80d5ff4
 vendor/lib64/libsystem_health_mon.so|ebe87c25638ef68937c3820db0d49bc762a74619
 vendor/lib64/qcrild_librilutils.so|69354ed8d4f5b18dc890e292bcbfec01fa37edf7
