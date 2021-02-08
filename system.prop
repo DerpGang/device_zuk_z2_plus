@@ -211,3 +211,6 @@ vendor.debug.enable.gamed=0
 #properties for limiting preview size in camera
 persist.sys.camera.display.umax=1920x1080
 persist.sys.camera.display.lmax=1280x720
+
+# SurfaceFlinger brightness tweak
+ro.sf.force_light_brightness=1
