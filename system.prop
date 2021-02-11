@@ -80,6 +80,8 @@ vendor.video.disable.ubwc=1
 persist.debug.wfd.enable=1
 persist.sys.wfd.nohdcp=1
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.hardware.vulkan=adreno
+ro.hardware.egl=adreno
 
 # Blur
 ro.surface_flinger.supports_background_blur=1

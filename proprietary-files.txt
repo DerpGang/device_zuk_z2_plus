@@ -447,8 +447,8 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so|3c75d133af5193436167380aa89abcf05d07
 vendor/lib64/vendor.qti.gnss@4.0.so|cc2504016d0ce0afbc58ac95207a4b913f2ccfe9
 
 # Graphics (Vulkan) - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/lib/hw/vulkan.msm8953.so:vendor/lib/hw/vulkan.msm8996.so|cf285142a92d8659d6d16b33a4106301dc481b95
-vendor/lib64/hw/vulkan.msm8953.so:vendor/lib64/hw/vulkan.msm8996.so|ce881dc43b2991901beca9fc0df3a605b15bb044
+vendor/lib/hw/vulkan.adreno.so
+vendor/lib64/hw/vulkan.adreno.so
 
 # Graphics - from LA.UM.9.6.2.r1-03600-89xx.0
 lib/libsdm-disp-apis.so|39d52eb5e311950a6b8eca35ac53758e7297e9cf
