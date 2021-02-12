@@ -286,6 +286,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOOT_JARS += \
    WfdCommon
 
+PRODUCT_PACKAGES += \
+    libavservices_minijail.vendor \
 
 # OMX
 PRODUCT_PACKAGES += \
