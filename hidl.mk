@@ -103,7 +103,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi HAL
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service.legacy
+    android.hardware.wifi@1.0-service
 
 # Ipacm
 PRODUCT_PACKAGES += \
