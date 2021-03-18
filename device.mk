@@ -20,7 +20,7 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
-$(call inherit-product-if-exists, vendor/zuk/z2_plus/z2_plus-vendor.mk)
+$(call inherit-product, vendor/zuk/z2_plus/z2_plus-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Overlays
