@@ -1,21 +1,21 @@
 # ADSP - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/bin/adsprpcd
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
+vendor/bin/adsprpcd|b736b00857d64e74a3b9be887215124d186f95d5
+vendor/lib/libadsp_default_listener.so|d34ee56137899b914b70d1933d6bdcabde8d8220
+vendor/lib/libadsprpc.so|a8dcd5087ab8f2e573cf4e5838b807b66c3ec304
+vendor/lib/libfastcvadsp_stub.so|70772d0bc39617430e27a21f89fccd93cc757185
+vendor/lib/libfastcvopt.so|c0c70efbb7ca1cfeea3dedec9f9d911c39486fce
+vendor/lib64/libadsp_default_listener.so|aa3b51b544032a250ab02687c0200152f80a23dd
+vendor/lib64/libadsprpc.so|9c72ce03841cb6011ecdd78c894ee5e1c60a5b6d
+vendor/lib64/libfastcvadsp_stub.so|f4535845bc4f40e3cb8e79d090e5ed87b0acfbb0
+vendor/lib64/libfastcvopt.so|f98fea81849fe4995f0e266534bdb04006717fc2
 
 # DSP - from LA.UM.9.6.2.r1-03600-89xx.0
-system_ext/lib/vendor.qti.hardware.dsp@1.0.so
-system_ext/lib64/vendor.qti.hardware.dsp@1.0.so
-vendor/bin/dspservice
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so
+system_ext/lib/vendor.qti.hardware.dsp@1.0.so|118bdc98a5a564a749245f2f1b11cd53a9cd4c68
+system_ext/lib64/vendor.qti.hardware.dsp@1.0.so|5f3519b56355765d0a80195d638d5ca460f0ae36
+vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|3326828ea7f6f8139429d2cd0379e80f5ca5178d
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|95b26a4a29f1443ec389be6ca80151a0aec96b36
 
 # ADSP - from Oneplus 3T PKQ1.181203.001
 vendor/lib/libadsp_hvx_callback_skel.so|b7e47d8d0c011caea30daf974de81eb01bb90268
@@ -402,10 +402,8 @@ lib64/hw/fingerprint.qcom.so:vendor/lib64/hw/fingerprint.qcom.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Gatekeeper - from LA.UM.8.6.r1-04400-89xx.0
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|b9816547a6a4530916b1a7104676a87a7742b819
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|3149c9e7eadbbf50b168b881659d7f59ff9e1a63
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|719694acd492df1510e415b9b90202c03c9230e4
+vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8996.so|73b6ae8dfe405c2f20af1ef9364bd37eb9809438
+vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8996.so|3b72f1b6c336201a160317810de34d346fc411e6
 
 # GPS - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti|d458a2aadc1d00df4696d6793e550f4a9422a2c9
@@ -415,7 +413,7 @@ vendor/bin/slim_daemon|77f598844f3f67ddb94fb14ae485fad3b11fcd70
 vendor/bin/xtra-daemon|57ca41ea32efc45fb6b65e2decdac45ddd881b92
 vendor/bin/xtwifi-client|12b1b7e31f17a59bbf4e8f0598ee07961c66162e
 vendor/bin/xtwifi-inet-agent|f805841e5c8ca3b0af620486a64a37148daa0980
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
+vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|6a70a956838b5070d310acb6cc76181aa1b83be6
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|6fd669a8546d013f692ad508c0e89c05bae3fc8f
@@ -806,12 +804,8 @@ vendor/bin/imsqmidaemon|0e5cf08e7cbd4e34fb69e6644a8c7d5e6715c306
 vendor/bin/ipacm-diag
 
 # Keystore - from LA.UM.8.6.r1-04400-89xx.0
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|ac0aabf396888c9dc8b6dc23291e190daa943e24
-vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|611429769b6d65057f7cad5447438b913c11ff95
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|9f8fb5caf3f244d03612e711b40378a6d9b52c0e
-vendor/lib/libkeymasterdeviceutils.so|18199d32a737436dfb2d9e7531c2552399bcb10e
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|b5ea7705ef90a1609b80a90a5d87d2f269ba96e7
-vendor/lib64/libkeymasterdeviceutils.so|d5a354146ec01bcbba8123f14fa8c0428ba35fd5
+vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8996.so|72b2f258cce7e42aebf8891857f65c741d5ea179
+vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8996.so|9ad2d76083fd4cc79d258cd47ae5e20c005d8ae9
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8996.so
@@ -899,17 +893,17 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|0119fa4d87505bc5d9426ec8ff
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|57d936014f89811481712ac7a08d104b85b636b5
 
 # Sensors - from LA.UM.9.6.2.r1-03600-89xx.0
-vendor/bin/sensors.qti
-vendor/lib64/hw/activity_recognition.msm8937.so:vendor/lib64/hw/activity_recognition.msm8996.so
-vendor/lib64/libsensor1.so
-vendor/lib64/libsensor_reg.so
-vendor/lib64/libsensor_user_cal.so
-vendor/lib64/sensors.ssc.so
-vendor/lib/hw/activity_recognition.msm8937.so:vendor/lib/hw/activity_recognition.msm8996.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/libsensor_user_cal.so
-vendor/lib/sensors.ssc.so
+vendor/bin/sensors.qti|d87eb74b701f9e047c8ed7deb5fcd43a5639572a
+vendor/lib64/hw/activity_recognition.msm8937.so:vendor/lib64/hw/activity_recognition.msm8996.so|20948be407097354f1cb206dadc0c07a46ec5c5b
+vendor/lib64/libsensor1.so|ecd936e78d9ba35878cb0bfbff38289e8651ac8d
+vendor/lib64/libsensor_reg.so|4550e44b37ce57db92bb379e9c65ece68c802d1e
+vendor/lib64/libsensor_user_cal.so|9cd4a306c7d67a2248b1be89d4517ecd6c0fbbc2
+vendor/lib64/sensors.ssc.so|92f6c3da84c8790778b78b5dfa8593e12c940494
+vendor/lib/hw/activity_recognition.msm8937.so:vendor/lib/hw/activity_recognition.msm8996.so|98d3def727d5e5d23a8d0e18e3da90d903b9eaf2
+vendor/lib/libsensor1.so|4c720827e086453d20223c0ef76f0bf5a52b6623
+vendor/lib/libsensor_reg.so|848f74306042a91eab6dc68723d27062dc6e8522
+vendor/lib/libsensor_user_cal.so|c2694930fd7991eb7d53174e00781546e2360a82
+vendor/lib/sensors.ssc.so|ab53946c1bf4d207bb1a48fa9da92ceb3fdf39c6
 
 # Thermal - from LA.UM.7.5.r1-05300-8x96.0
 vendor/bin/thermal-engine|e55d69e197f993a04ead228b42f28fd1d7b1294b
