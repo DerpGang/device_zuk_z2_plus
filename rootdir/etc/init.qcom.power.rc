@@ -165,11 +165,9 @@ on enable-low-power
     # Enable all LPMs (this will enable C4, D4, D3, E4 and M3 LPMs)
     write /sys/module/lpm_levels/parameters/sleep_disabled "N"
 
-    # Set perfd properties
-    setprop vendor.post_boot.parsed 1
-
 on property:sys.boot_completed=1
     trigger enable-low-power
+    setprop vendor.post_boot.parsed 1
 
     # Set I/O squeduler
     setprop sys.io.scheduler "bfq"
