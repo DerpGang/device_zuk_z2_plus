@@ -284,9 +284,6 @@ vendor/lib/libmmcamera_ov8856.so
 vendor/lib/libmmcamera_ov8865.so
 vendor/lib/libmmcamera_s5k2m8sx.so
 
-# Charger
-vendor/bin/hvdcp_opti
-
 # CNE - from LA.UM.9.6.2.r1-03600-89xx.0
 system_ext/lib64/com.quicinc.cne.api@1.0.so|8e0491212ff86795958a17b82f4dcad76b16e954
 system_ext/lib64/com.quicinc.cne.api@1.1.so|ed07ba34eb02a80b5b5c398bbadc5a64b0f62c2a
