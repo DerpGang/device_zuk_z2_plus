@@ -202,20 +202,18 @@ PRODUCT_PACKAGES += \
 # HIDL
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
 
-# VNDK-SP:
-PRODUCT_PACKAGES += \
-   vndk-sp
-
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
-# HIDL
+# VNDK
 PRODUCT_PACKAGES += \
+    vndk_package \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libstdc++.vendor \
 
 # IMS
 PRODUCT_PACKAGES += \
