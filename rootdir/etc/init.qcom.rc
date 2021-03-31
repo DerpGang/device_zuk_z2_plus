@@ -58,7 +58,7 @@ on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
-    mount_all /system/vendor/etc/fstab.qcom
+    mount_all /vendor/etc/fstab.qcom
 
 on late-fs
    
@@ -384,7 +384,7 @@ service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
 
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
-    swapon_all /system/vendor/etc/fstab.qcom
+    swapon_all /vendor/etc/fstab.qcom
 
     # end boot time fs tune
     write /sys/block/sda/queue/read_ahead_kb 128
