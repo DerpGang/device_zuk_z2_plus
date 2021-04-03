@@ -120,6 +120,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.common@1.0 \
     camera.msm8996 \
     libmm-qcamera \
     mm-qcamera-app \
@@ -161,6 +162,7 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
     libqdMetaData.system
 
 # Doze mode
