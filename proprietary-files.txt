@@ -450,8 +450,8 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so|3c75d133af5193436167380aa89abcf05d07
 vendor/lib64/vendor.qti.gnss@4.0.so|cc2504016d0ce0afbc58ac95207a4b913f2ccfe9
 
 # Graphics (Vulkan) - from LA.UM.9.6.2.r1-03600-89xx.0
-lib/vulkan.adreno.so|f4f3b86f4703236451933183f1f5b4a9330ef9f1
-lib64/vulkan.adreno.so|81422f8d82edeae2e66673b8ea14b317c47db94c
+vendor/lib/hw/vulkan.adreno.so
+vendor/lib64/hw/vulkan.adreno.so
 
 # Graphics - from LA.UM.9.6.2.r1-03600-89xx.0
 lib/libsdm-disp-apis.so|39d52eb5e311950a6b8eca35ac53758e7297e9cf
