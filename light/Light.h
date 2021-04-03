@@ -63,7 +63,6 @@ class Led {
 
 struct Light : public ILight {
     Light(std::pair<std::ofstream, uint32_t>&& lcd_backlight,
-          std::vector<std::ofstream>&& button_backlight,
           Led&& red_led, Led&& green_led, Led&& blue_led,
           std::ofstream&& rgb_blink);
 
@@ -74,14 +73,12 @@ struct Light : public ILight {
   private:
     void setAttentionLight(const LightState& state);
     void setBatteryLight(const LightState& state);
-    void setButtonsBacklight(const LightState& state);
     void setLcdBacklight(const LightState& state);
     void setNotificationLight(const LightState& state);
     void setSpeakerBatteryLightLocked();
     void setSpeakerLightLocked(const LightState& state);
 
     std::pair<std::ofstream, uint32_t> mLcdBacklight;
-    std::vector<std::ofstream> mButtonBacklight;
     Led mRedLed;
     Led mGreenLed;
     Led mBlueLed;

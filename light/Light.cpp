@@ -115,7 +115,6 @@ void Led::setBlink(int brightness, int onMs, int offMs) {
 }
 
 Light::Light(std::pair<std::ofstream, uint32_t>&& lcd_backlight,
-             std::vector<std::ofstream>&& button_backlight,
              Led&& red_led, Led&& green_led, Led&& blue_led,
              std::ofstream&& rgb_blink)
     : mLcdBacklight(std::move(lcd_backlight)),
