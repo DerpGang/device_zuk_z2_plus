@@ -210,7 +210,6 @@ PRODUCT_COPY_FILES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk_package \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \

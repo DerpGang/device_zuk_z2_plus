@@ -193,6 +193,9 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 # BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/temp
 
+# VNDK
+BOARD_VNDK_VERSION := current
+
 # Treble
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
