@@ -54,6 +54,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.gyro.disable=0 \
     ro.persist.qcapb=1
 
+# Disable SMD sensor
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.sensors.smd=false
+
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.charger.enable_suspend=true
