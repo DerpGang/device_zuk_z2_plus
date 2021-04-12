@@ -33,14 +33,18 @@ ro.bluetooth.emb_wp_mode=true
 ro.bluetooth.wipower=true
 
 # Camera
-camera.disable_zsl_mode=0
+camera.disable_zsl_mode=1
 persist.camera.mct.debug=0
 persist.camera.iface.logs=0
 persist.camera.imglib.logs=0
 persist.camera.isp.debug=0
 persist.camera.sensor.debug=0
 vendor.vidc.debug.level=0
-ro.vendor.camera.provider24.disable_mem_init=1
+persist.camera.HAL3.enabled=1
+persist.camera.preview.ubwc=0
+persist.camera.video.ubwc=0
+persist.camera.gyro.disable=0
+ro.persist.qcapb=1
 
 # Charger
 ro.charger.enable_suspend=true
