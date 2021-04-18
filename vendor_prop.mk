@@ -24,6 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
     persist.vendor.bt.enable.splita2dp=false \
+    vendor.audio.spkr_prot.tx.sampling_rate=48000 \
     vendor.audio.tunnel.encode=false \
     vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1 \
     vendor.voice.path.for.pcm.voip=true \
