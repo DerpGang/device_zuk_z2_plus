@@ -20,6 +20,7 @@ ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 persist.vendor.bt.enable.splita2dp=false
 vendor.audio.tunnel.encode=false
+vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 vendor.voice.path.for.pcm.voip=true
 persist.vendor.audio.speaker.prot.enable=true
 persist.vendor.audio.hw.binder.size_kbyte=1024
