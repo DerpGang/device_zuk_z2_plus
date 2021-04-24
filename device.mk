@@ -74,6 +74,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_prop.mk
+
 # Haters gonna hate..
 PRODUCT_CHARACTERISTICS := nosdcard
 
