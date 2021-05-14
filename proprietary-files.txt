@@ -808,21 +808,10 @@ vendor/bin/ipacm-diag
 vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8996.so|72b2f258cce7e42aebf8891857f65c741d5ea179
 vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8996.so|9ad2d76083fd4cc79d258cd47ae5e20c005d8ae9
 
-# Listen - from LA.UM.9.6.2.r1-04100-89xx.0
-vendor/lib/hw/sound_trigger.primary.msm8953.so:vendor/lib/hw/sound_trigger.primary.msm8996.so|55f8b7ebf9b30ef84341081dcdd5289dc70ceaa6
-vendor/lib/libadpcmdec.so|7a38d6b28b27cf663681ad077614a03164418f91
-vendor/lib/libgcs-calwrapper.so|4167120700597e53d562ce7f6e4f727df15edfc3
-vendor/lib/libgcs-ipc.so|d678059afc80e0a3679947d2c162b3898854358c
-vendor/lib/libgcs-osal.so|2fc9a8ac335c37b8cefc8dce0abca1a478f96f65
-vendor/lib/libgcs.so|f792321c761f2695ef9d6d467c31b1722162b984
-vendor/lib/liblistensoundmodel2.so|b8cd6c4dd822790d3540a845753ef0f7d6000c59
-vendor/lib/libsmwrapper.so|f0ee761c02c888e77d947bb87d162d9379bc1530
-vendor/lib64/hw/sound_trigger.primary.msm8953.so:vendor/lib64/hw/sound_trigger.primary.msm8996.so|69ef98a548a597af630c70e40870b3de9dd8dfd3
-vendor/lib64/libgcs-calwrapper.so|4af3836e1054eb599189b2eea107cdd9198dd4d1
-vendor/lib64/libgcs-ipc.so|84fcc4bdeaa179059ebd5ab79288da1553678da5
-vendor/lib64/libgcs-osal.so|e5cd3ed3385b3797a67a8f4519eb59d63ae0a5d4
-vendor/lib64/libgcs.so|86ede85a93b2355f4b6a8505fb14b6af06e684d3
-vendor/lib64/liblistensoundmodel2.so|4dd9ed92083e1b730f546453ec2494cb931d174f
+# Listen
+vendor/lib/hw/sound_trigger.primary.msm8996.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libsmwrapper.so
 
 # Perf - from daisy_sprout:10/QKQ1.191002.002/V11.0.18.0.QDLMIXM
 vendor/bin/energy-awareness|def07e366347c7f0a7778b748acb49557ab21d2a
