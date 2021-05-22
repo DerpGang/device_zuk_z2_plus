@@ -285,12 +285,6 @@ vendor/lib/libmmcamera_ov8865.so|68d6897c106c911ce3100a03643ef197
 vendor/lib/libmmcamera_s5k2m8sx.so
 
 # CNE - from LA.UM.9.6.2.r1-04100-89xx.0
-system_ext/lib/com.quicinc.cne.api@1.0.so|d479c1a9682195750ff8299f1eb5bcf131aacb7f
-system_ext/lib/com.quicinc.cne.api@1.1.so|b2fc4b5b16c1bdf094dc2401d50fa2d2da4704fa
-system_ext/lib/com.quicinc.cne.constants@1.0.so|edc41dff509b6dad6bbff81fb50ab85e711f5123
-system_ext/lib/com.quicinc.cne.constants@2.0.so|049d5aa6f4f700f851519f22e98389a1ac45a31a
-system_ext/lib/com.quicinc.cne.constants@2.1.so|11525c730a9ccf514ea8529dcf40a9c81ceb3de8
-system_ext/lib/libmwqemiptablemgr.so|8becbc2b991ad9db8a1f0806be03ed30105c4a26
 system_ext/lib64/com.quicinc.cne.api@1.0.so|8e0491212ff86795958a17b82f4dcad76b16e954
 system_ext/lib64/com.quicinc.cne.api@1.1.so|ed07ba34eb02a80b5b5c398bbadc5a64b0f62c2a
 system_ext/lib64/com.quicinc.cne.constants@1.0.so|efa6cb32fdca02fca266bb506cdf661fcedd3dc8
@@ -298,7 +292,6 @@ system_ext/lib64/com.quicinc.cne.constants@2.0.so|27d77ccb89802e51ebbf0a85b12833
 system_ext/lib64/com.quicinc.cne.constants@2.1.so|22604bae46a8820a10c3d9161e06b74865b5343f
 system_ext/lib64/libmwqemiptablemgr.so|cd385c5a6d626bc684eba2a191897bda34e132be
 -vendor/app/CneApp/CneApp.apk|71cd41dad103f6dcb859506538a1cd9093412359
--vendor/app/IWlanService/IWlanService.apk|695b3fa7e70f6079cf7e90144fcb79591dff38d0
 vendor/bin/cnd|7fff85cef809bdcc25e097b20d7452f860e1eed3
 vendor/etc/cne/profileMwqem.xml|947917691684584b7e2ddf3588cd6f8e99f3804f
 vendor/etc/cne/mwqem.conf|c51d3893b86ab89fae218f3a92c4f9c18ea401a8
@@ -350,7 +343,6 @@ vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so|9756b31b055c83c
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so|0ff864f767e707748c0d82be19bc5685f34a7a31
 vendor/lib64/vendor.qti.hardware.data.connection@1.1.so|ce98d5e0b62180d6d2b535d1263ec4ac4a303a33
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|9f24d284794be0440417fdf71e4ae9e8b0195403
-vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so|2946d3c30ab393ef0beabbc65445773b0ff9812a
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|50f65b2c6366bfa0838f0018773543b300961c05
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|b17a82a9740832bd686c3d4c4e36d0e391940705
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|09f4b85830f120db89945069cd30f997fbcfad6a
@@ -443,7 +435,6 @@ vendor/lib64/liblowi_client.so|9db4ce5f62b6be6b3bf29199a36bdf7183606897
 vendor/lib64/liblowi_wifihal.so|6a857d771ca8a284c9adf7fcc9edf36bb179177c
 vendor/lib64/libxtadapter.so|8038961c9cdbac960ac898c53bcda260d361f339
 vendor/lib64/libqcc_file_agent.so|7eafd838c18b7bf372f70ec0391da76e9e19ac2b
-vendor/lib64/libavservices_minijail.so|c1ccd1e8cfb049c4c3dd8ef8b79364da17a41513
 vendor/lib64/vendor.qti.gnss@1.0.so|b291e8be101b7a2d75b8830cb7d243746c1568f8
 vendor/lib64/vendor.qti.gnss@1.1.so|c898355e5a4c6e367d2b275acadc5e8ddf328980
 vendor/lib64/vendor.qti.gnss@1.2.so|9614edea390f451fd22c8051afeebdbddaf9920e
@@ -476,7 +467,6 @@ vendor/lib/libgpudataproducer.so|f5c0c480089ca3c2368962ddb259055e582c8ca2
 vendor/lib/libgsl.so|ba2d6510f007556c7c313a232073258770af4e2b
 vendor/lib/libhdr_tm.so|3d899ac8b0e6370295ab56ad95076e3c00140f75
 vendor/lib/libllvm-glnext.so|beaa9203400ad4598770c808c629637dd66aa5c9
-vendor/lib/libllvm-qcom.so|a6294a1607f3d307c75d375ceeecdfe21cc626ba
 vendor/lib/libmm-hdcpmgr.so|ea47b3c85cfd894945cd7a4412cdc3972ea67c78
 vendor/lib/libpvr.so|34a02d80caef357e673732661810207c9cb32a22
 vendor/lib/librs_adreno.so|97756870564754d9cd6e6301a4f1a15f7a5a5711
@@ -496,7 +486,6 @@ vendor/lib64/libgpudataproducer.so|0f27525bf81a76930360f8e4f5a756ac97eeab67
 vendor/lib64/libgsl.so|1cb105b527d41bdfd53ee6dccd39a31787f77e89
 vendor/lib64/libhdr_tm.so|cfd5f03dd37b5b6fb46d288bed619b780ec7343e
 vendor/lib64/libllvm-glnext.so|1a72aa1ce9820be7bde1bafcf19417d606445fb3
-vendor/lib64/libllvm-qcom.so|c16d40d5b7d3a6a79f9e735e7e37a262e2399ab2
 vendor/lib64/libmm-hdcpmgr.so|14ba633fbef35ad3c684a440abb15d9e2c300537
 vendor/lib64/libpvr.so|310828d47b0020ea7cb52eec68f16903fc1728be
 vendor/lib64/librs_adreno.so|d8bee70cc12ab5c6a979427e24fb7843fddae08b
@@ -664,16 +653,11 @@ vendor/lib64/libmdmdetect.so|7d9594eaa6da36b1cf7a7f9ca9447c568dcb2f38
 vendor/lib64/liboemaids_vendor.so|0cbc4ee12f829658a6d7a63453e257927a4ed14a
 vendor/lib64/libqcmaputils.so|73d322a673462396e490daa472e532ed425a3e2a
 vendor/lib64/libqrtr.so|6f7abe88e19e44f6b933de1cac0c7a3437318f04
-vendor/lib64/libpdnotifier.so|9b6156370583f61fd85e6edf40e047442676bed8
-vendor/lib64/libqcrilFramework.so|da3c0216ddad60f48b1fc90b31a6d6d1114e95be
 vendor/lib64/libqsocket.so|391748e46f7dbbf267dbc5a5c89f0d2a8b4fca4e
-vendor/lib64/libril-qc-hal-qmi.so|52baa10497e5e087e2d83bd1b735abb947ad9971
 vendor/lib64/libril-qcril-hook-oem.so|dec0f4f4cd67c27fc0903e29c00964f9533b64ee
 vendor/lib64/librilqmiservices.so|47bc926d09be9696f4cfa0bf5e58d2d3b855eec2
-vendor/lib64/librmnetctl.so|829848dabd3cc43b12a90864506e31a1b09f9bad
 vendor/lib64/libsettings.so|74de94e5368d37a92a58d2a8282fc89b923c82a8
 vendor/lib64/libsystem_health_mon.so|ebe87c25638ef68937c3820db0d49bc762a74619
-vendor/lib64/qcrild_librilutils.so|69354ed8d4f5b18dc890e292bcbfec01fa37edf7
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|c9d3326a23878f87e4a51865490d11d127ae743e
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|ced40d1ca99fca741908e2a377de1ca4f4bbfa02
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so|26e1bb97770edbb8155a0f574f9bb2f892080a0e
@@ -779,11 +763,9 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|939193852a791072058e87
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
 
 # Radio - from tissot-user-9-PKQ1.180917.001-V10.0.20.0.PDHMIXM-release-keys
-vendor/bin/hw/qcrild|442a706df50e319f00aa92a69e7c06e4e75ff5b5
 vendor/bin/netmgrd|7206c7b26b09a2d7bccab23fd66094771c00aad7
 vendor/etc/data/dsi_config.xml|f4861831fcb21d43e2a9ca12519155ebb8ac1407
 vendor/etc/data/netmgr_config.xml|9a66590aed48b5df9c33a75007420d9d99f533b5
-vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 vendor/lib/liblqe.so|b1306e0186ab4bbc1e45ac3700d5aad8a8cbd2ad
 vendor/lib64/libconfigdb.so|1fa77478a72cf4152c1027fd40ee9a58a0ba89aa
 vendor/lib64/liblqe.so|63ed946d00ed73664410041e3e8fa8c2f5cbeeb6

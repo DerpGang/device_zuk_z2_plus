@@ -61,14 +61,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1 \
-    persist.vendor.sys.cnd.iwlan=1
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.mode=concurrent \
     persist.data.netmgrd.qos.enable=true \
     ro.use_data_netmgrd=true \
-    persist.data.iwlan.enable=true \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.use_old_mnc_mcc_format=true
 
