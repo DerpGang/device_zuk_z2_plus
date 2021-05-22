@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-$(LOCAL_DIR)/lineage_z2_plus.mk
+$(LOCAL_DIR)/styx_z2_plus.mk
+
+COMMON_LUNCH_CHOICES := \
+    styx_z2_plus-user \
+    styx_z2_plus-userdebug \
+    styx_z2_plus-eng
