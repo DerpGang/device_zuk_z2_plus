@@ -138,9 +138,6 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
