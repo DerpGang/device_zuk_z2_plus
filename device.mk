@@ -320,6 +320,8 @@ PRODUCT_PACKAGES += \
 
 # HIDL Wrapper
 PRODUCT_PACKAGES += \
+    qti-telephony-hidl-wrapper-prd \
+    qti_telephony_hidl_wrapper_prd.xml \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml
 
