@@ -197,6 +197,10 @@ on post-fs-data
     chown system system /mnt/vendor/persist/sensors/registry/config
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
+    #Create directories for wifihal services
+    mkdir /dev/socket/wifihal 0770 wifi wifi
+    chmod 2770 /dev/socket/wifihal
+
     # Create /data/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
 
