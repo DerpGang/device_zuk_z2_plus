@@ -166,18 +166,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \
     vendor.perf.gestureflingboost.enable=true
 
-# Enable iorapd
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.iorapd.enable=true
-
-# Enable iorapd perfetto tracing for app starts
-PRODUCT_PROPERTY_OVERRIDES += \
-    iorapd.perfetto.enable=true
-
-# Enable iorapd readahead for app starts
-PRODUCT_PROPERTY_OVERRIDES += \
-    iorapd.readahead.enable=true
-
 # QC framework value-adds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.va_aosp.support=1
