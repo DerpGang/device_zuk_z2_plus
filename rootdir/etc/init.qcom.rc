@@ -81,6 +81,8 @@ on late-fs
 
 on post-fs-data
     start vendor.qseecomd
+    wait_for_prop vendor.sys.listeners.registered true
+    write /dev/ipa 1
 
     mkdir /data/vendor/misc 01771 system system
 
@@ -251,8 +253,6 @@ on early-boot
     # Set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
     start vendor.qseecomd
-    wait_for_prop vendor.sys.listeners.registered true
-    write /dev/ipa 1
 
     # Allow subsystem (modem etc) debugging
     write /sys/kernel/boot_adsp/boot 1
