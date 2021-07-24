@@ -584,7 +584,7 @@ service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
     class main
     user radio
     group radio vendor_qti_diag inet log
-    writepid /dev/cpuset/system-background/task
+    writepid /dev/cpuset/system-background/tasks
     disabled
 
 service vendor.imsrcsservice /vendor/bin/imsrcsd
