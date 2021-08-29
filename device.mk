@@ -129,10 +129,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/ov8865_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov8865_chromatix.xml \
     $(LOCAL_PATH)/configs/camera/s5k2m8sx_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k2m8sx_chromatix.xml
 
-# APEX
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
-
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
