@@ -63,6 +63,13 @@ on late-fs
    
     mount_all /vendor/etc/fstab.qcom --late
 
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-1
+    start vendor.configstore-hal
+    start vendor.gralloc-2-0
+
     # boot time fs tune
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
