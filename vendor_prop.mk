@@ -169,6 +169,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.debug.level=0 \
     vendor.vidc.disable.split.mode=1 \
     debug.stagefright.omx_default_rank=0 \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Perf
