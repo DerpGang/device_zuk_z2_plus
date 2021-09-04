@@ -94,6 +94,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.loglevel=0 \
     persist.vendor.mwqem.enable=1
 
+# DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    media.mediadrmservice.enable=true
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
