@@ -35,7 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
-    qcom.bluetooth.soc=rome \
+    vendor.qcom.bluetooth.soc=rome \
     ro.bluetooth.emb_wp_mode=true \
     ro.vendor.bt.bdaddr_path=/mnt/vendor/persist/bluetooth/bt_mac \
     ro.bluetooth.wipower=true
