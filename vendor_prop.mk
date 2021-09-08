@@ -32,7 +32,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024 \
     ro.af.client_heap_size_kbyte=7168 \
     ro.config.vc_call_vol_steps=6 \
-    persist.bluetooth.bluetooth_audio_hal.disabled=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
