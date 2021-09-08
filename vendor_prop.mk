@@ -301,3 +301,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SurfaceFlinger brightness tweak
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.force_light_brightness=1
+
+# Shutdown waittime
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.vendor.shutdown.waittime=20000
+
