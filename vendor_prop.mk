@@ -23,7 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.speaker=true \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
-    persist.vendor.bt.enable.splita2dp=false \
+    vendor.audio.feature.a2dp_offload.enable=false \
     vendor.audio.spkr_prot.tx.sampling_rate=48000 \
     vendor.audio.tunnel.encode=false \
     vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1 \
@@ -36,11 +36,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.hfp.client=1 \
     bt.max.hfpclient.connections=1 \
     vendor.qcom.bluetooth.soc=rome \
-    ro.bluetooth.emb_wp_mode=true \
-    ro.vendor.bt.bdaddr_path=/mnt/vendor/persist/bluetooth/bt_mac \
-    ro.bluetooth.wipower=true
+    ro.vendor.bluetooth.wipower=false \
+    ro.vendor.bluetooth.emb_wp_mode=false \
+    ro.vendor.bt.bdaddr_path=/mnt/vendor/persist/bluetooth/bt_mac
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
