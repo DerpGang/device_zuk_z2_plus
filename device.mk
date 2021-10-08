@@ -225,6 +225,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common_system \
     android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.0.vendor \
     ims-ext-common \
     ims_ext_common.xml
 
@@ -243,6 +244,8 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2.vendor \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \

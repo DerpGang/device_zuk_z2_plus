@@ -33,6 +33,13 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.broadcastradio@1.0-impl
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.1 \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -162,4 +169,5 @@ PRODUCT_PACKAGES += \
 # Net
 PRODUCT_PACKAGES += \
      android.system.net.netd@1.0 \
+     android.system.net.netd@1.1.vendor \
      netutils-wrapper-1.0
