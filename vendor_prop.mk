@@ -65,6 +65,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.charger.enable_suspend=true
 
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+    fingerprint.nocleanup=true
+
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1 \
