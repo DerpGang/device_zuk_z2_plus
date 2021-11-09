@@ -169,6 +169,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_USERIMAGES_USE_EXT4 := true
