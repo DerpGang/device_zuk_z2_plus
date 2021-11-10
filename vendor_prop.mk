@@ -72,6 +72,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1 \
+    persist.vendor.sys.cnd.iwlan=1 \
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -224,6 +225,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.enableadvancedscan=false \
     persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.data.iwlan.enable=true \
+    ro.telephony.iwlan_operation_mode=legacy \
     persist.vendor.qti.telephony.vt_cam_interface=1
 
 # IMS
