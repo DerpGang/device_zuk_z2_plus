@@ -176,9 +176,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_SEPOLICY_DIRS += device/zuk/z2_plus-sepolicy/vendor
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/zuk/z2_plus-sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/zuk/z2_plus-sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += device/zuk/z2_plus-sepolicy/vendor
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/zuk/z2_plus-sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/zuk/z2_plus-sepolicy/private
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/temp
 
 # VNDK
