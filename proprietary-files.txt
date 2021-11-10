@@ -416,13 +416,8 @@ vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8996.so|73b6ae8d
 vendor/lib64/hw/gatekeeper.msm8953.so:vendor/lib64/hw/gatekeeper.msm8996.so|3b72f1b6c336201a160317810de34d346fc411e6
 
 # GPS - from LA.UM.9.6.2.r1-04100-89xx.0
-system_ext/etc/permissions/com.qti.location.sdk.xml
-system_ext/etc/permissions/com.qualcomm.location.xml
 system_ext/etc/permissions/izat.xt.srv.xml
-system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml
-system_ext/framework/com.qti.location.sdk.jar
 system_ext/framework/izat.xt.srv.jar
--system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk
 system_ext/lib64/vendor.qti.gnss@1.0.so
 system_ext/lib64/vendor.qti.gnss@1.1.so
 system_ext/lib64/vendor.qti.gnss@1.2.so
@@ -436,7 +431,6 @@ vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
-vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
