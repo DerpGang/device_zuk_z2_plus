@@ -181,6 +181,7 @@ BOARD_SEPOLICY_DIRS += device/zuk/z2_plus-sepolicy/vendor
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/zuk/z2_plus-sepolicy/public
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/zuk/z2_plus-sepolicy/private
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/temp
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
