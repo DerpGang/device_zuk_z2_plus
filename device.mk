@@ -191,7 +191,6 @@ PRODUCT_PACKAGES += \
     libgeofencing \
     libgnss \
     libsensorndkbridge \
-    libwifi-hal-ctrl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -388,14 +387,15 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
+    libnl \
     libqsap_sdk \
     libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
-    TetheringConfigOverlay \
     wpa_supplicant \
     wpa_supplicant.conf \
-    WifiOverlay
+    WifiOverlay \
+    TetheringOverlay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \

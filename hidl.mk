@@ -135,14 +135,12 @@ PRODUCT_COPY_FILES += \
 
 # WiFi HAL
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy
+    android.hardware.wifi@1.0-service
 
 # Ipacm
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
