@@ -187,6 +187,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    libwifi-hal-ctrl \
     libbatching \
     libgeofencing \
     libgnss \
