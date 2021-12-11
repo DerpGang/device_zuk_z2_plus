@@ -204,6 +204,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.multisim.config=dsds \
+    persist.vendor.data.iwlan.enable=true \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
@@ -239,7 +240,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ril.subscription.types=NV,RUIM \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.default_network=22,22 \
-    ro.telephony.use_old_mnc_mcc_format=true
+    telephony.lteOnCdmaDevice=1 \
 
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
