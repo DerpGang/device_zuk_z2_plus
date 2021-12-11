@@ -151,11 +151,6 @@ PRODUCT_PACKAGES += \
     services-ext \
     libcnefeatureconfig
 
-# Charger images
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8996 \
