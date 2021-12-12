@@ -370,6 +370,12 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
+    # Enable qcrild and data services
+    enable vendor.qcrild
+    enable vendor.qcrild2
+    enable vendor.dataqti
+    enable vendor.dataadpl
+
 service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
     class core
     user root
