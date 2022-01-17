@@ -121,7 +121,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.video.disable.ubwc=1 \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.nohdcp=1 \
-    debug.sf.enable_hwc_vds=1
+    debug.sf.enable_hwc_vds=0
 
 # IMS
 PRODUCT_PRODUCT_PROPERTIES += \
