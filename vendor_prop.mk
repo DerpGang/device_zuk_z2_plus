@@ -106,7 +106,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_hwc_vds=1 \
+    debug.sf.enable_hwc_vds=0 \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=0 \
     debug.egl.hw=0 \
