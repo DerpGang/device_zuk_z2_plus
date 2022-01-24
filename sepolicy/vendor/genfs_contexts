@@ -15,3 +15,6 @@ genfscon sysfs /devices/soc/400f000.qcom,spmi/spmi-0/spmi0-03/400f000.qcom,spmi:
 genfscon sysfs /devices/soc/400f000.qcom,spmi/spmi-0/spmi0-03/400f000.qcom,spmi:qcom,pmi8994@3:qcom,leds@d000/leds                u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/soc/400f000.qcom,spmi/spmi-0/spmi0-00/400f000.qcom,spmi:qcom,pm8994@0:qcom,pm8994_rtc/rtc                u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/virtual/touch/tp_dev/gesture_on                                                                          u:object_r:sysfs_doubletap:s0
+
+# ProcFS
+genfscon proc /sys/vm/dirty_writeback_centisecs                     u:object_r:proc_dirty:s0
