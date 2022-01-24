@@ -35,3 +35,6 @@ genfscon sysfs /devices/platform/soc/400f000.qcom,spmi/spmi-0/spmi0-02/400f000.q
 
 #Vibrator
 genfscon sysfs /devices/platform/soc/400f000.qcom,spmi/spmi-0/spmi0-03/400f000.qcom,spmi:pmi8994@3:qcom,haptics@c000/leds/vibrator                                                         u:object_r:sysfs_leds:s0
+
+# ProcFS
+genfscon proc /sys/vm/dirty_writeback_centisecs                     u:object_r:proc_dirty:s0
