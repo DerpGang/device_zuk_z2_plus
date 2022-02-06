@@ -360,8 +360,6 @@ PRODUCT_PACKAGES += \
     init.bt.sh \
     init.wlan.sh \
     init.qcom.sensors.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh
 
 # RIL
 PRODUCT_PACKAGES += \
