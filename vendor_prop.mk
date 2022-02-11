@@ -123,7 +123,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.nohdcp=1 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
     ro.hardware.vulkan=adreno \
-    ro.hardware.egl=adreno
+    ro.hardware.egl=adreno \
+    debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
+    renderthread.skia.reduceopstasksplitting=true
 
 # Blur
 PRODUCT_PROPERTY_OVERRIDES += \
