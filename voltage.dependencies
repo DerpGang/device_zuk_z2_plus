@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "VoltageOS-Devices",
+    "repository": "vendor_zuk_z2_plus",
+    "target_path": "vendor/zuk/z2_plus",
+    "branch": "12"
+  }
+]
