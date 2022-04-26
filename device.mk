@@ -133,9 +133,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     libldacBT_bco
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
