@@ -13,9 +13,6 @@ value:2952
 [AID_VENDOR_ADPL_ODL]
 value:2905
 
-[AID_VENDOR_QRTR]
-value:2906
-
 [AID_VENDOR_FASTRPC]
 value:2908
 

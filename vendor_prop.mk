@@ -72,13 +72,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # CNE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1 \
-    persist.vendor.sys.cnd.iwlan=1
+    persist.vendor.sys.cnd.iwlan=1 \
 
-# Netmgrd
+# Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.use_data_netmgrd=true \
+    persist.vendor.data.mode=concurrent \
     persist.data.netmgrd.qos.enable=true \
-    persist.vendor.data.mode=concurrent
+    ro.use_data_netmgrd=true \
+    ro.telephony.call_ring.multiple=false \
+    ro.telephony.use_old_mnc_mcc_format=true
 
 # Device was launched with M
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -203,44 +205,60 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.multisim.config=dsds \
-    persist.vendor.data.iwlan.enable=true \
-    persist.vendor.radio.add_power_save=1 \
+    DEVICE_PROVISIONED=1 \
+    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    persist.sys.fflag.override.settings_provider_model=false \
+    ril.subscription.types=NV,RUIM \
+    ro.telephony.call_ring.multiple=false \
+    ro.telephony.default_cdma_sub=0 \
+    ro.telephony.default_network=20,20 \
+    persist.data.qmi.adb_logmask=0 \
+    persist.net.doxlat=true \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
+    persist.radio.force_on_dc=true \
+    persist.radio.multisim.config=dsds \
+    persist.radio.redir_party_num=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.hw_mbn_update=1 \
     persist.vendor.radio.sw_mbn_update=1 \
     persist.vendor.radio.procedure_bytes=SKIP \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
-    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-    service.qti.ims.enabled=1 \
+    persist.vendor.radio.add_power_save=1 \
+    persist.vendor.radio.enableadvancedscan=false \
+    persist.vendor.radio.mt_sms_ack=30 \
+    persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.data.iwlan.enable=true \
+    ro.telephony.iwlan_operation_mode=legacy \
+    persist.vendor.qti.telephony.vt_cam_interface=1
+
+# IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
     persist.dbg.volte_avail_ovr=1 \
+    service.qti.ims.enabled=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
-    persist.vendor.ims.disableIMSLogs=1 \
-    persist.vendor.ims.disableADBLogs=1 \
-    persist.vendor.ims.disableDebugDataPathLogs=1 \
+    persist.dbg.ims_volte_enable=1 \
+    persist.vendor.ims.disableIMSLogs=1
+    persist.vendor.ims.disableADBLogs=1
+    persist.vendor.ims.disableDebugDataPathLogs=1
     persist.vendor.ims.disableDebugLogs=1 \
     persist.vendor.ims.disableSigHandler=1 \
-    persist.vendor.ims.disableQXDMLogs=1 \
-    DEVICE_PROVISIONED=1 \
-    persist.rild.nitz_long_ons_0= \
-    persist.rild.nitz_long_ons_1= \
-    persist.rild.nitz_long_ons_2= \
-    persist.rild.nitz_long_ons_3= \
-    persist.rild.nitz_plmn= \
-    persist.rild.nitz_short_ons_0= \
-    persist.rild.nitz_short_ons_1= \
-    persist.rild.nitz_short_ons_2= \
-    persist.rild.nitz_short_ons_3= \
-    rild.libargs=-d /dev/smd0 \
-    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-    ril.subscription.types=NV,RUIM \
-    ro.telephony.call_ring.multiple=false \
-    ro.telephony.default_network=22,22 \
-    telephony.lteOnCdmaDevice=1 \
+    persist.vendor.ims.disableQXDMLogs=1
+
+# RmNet Data
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.rmnet.data.enable=true \
+    persist.data.wda.enable=true \
+    persist.data.df.dl_mode=5 \
+    persist.data.df.ul_mode=5 \
+    persist.data.df.agg.dl_pkt=10 \
+    persist.data.df.agg.dl_size=4096 \
+    persist.data.df.mux_count=8 \
+    persist.data.df.iwlan_mux=9 \
+    persist.data.df.dev_name=rmnet_usb0
 
 # BPF
 PRODUCT_PROPERTY_OVERRIDES += \
