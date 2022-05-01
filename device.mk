@@ -205,8 +205,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf
 
 # HW crypto
-#PRODUCT_PACKAGES += \
-#    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # HIDL
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
