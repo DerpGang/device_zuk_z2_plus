@@ -176,6 +176,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.calls.on.ims=1 \
     persist.dbg.ims_volte_enable=1
 
+# Render
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.cpurend.vsync=false
+
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.rmnet.data.enable=true \
