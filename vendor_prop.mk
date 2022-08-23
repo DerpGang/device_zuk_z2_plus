@@ -35,6 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.device.class_of_device=90,2,12 \
     bluetooth.hfp.client=1 \
     bt.max.hfpclient.connections=1 \
     vendor.qcom.bluetooth.soc=rome \
