@@ -1,0 +1,2 @@
+get_prop(system_server, vendor_alarm_boot_prop)
+allow system_server sysfs_vibrator:file read;

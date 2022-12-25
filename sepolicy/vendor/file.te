@@ -1,0 +1,15 @@
+# /data
+type acdbdelta_vendor_data_file, file_type, data_file_type;
+type fpc_data_file, core_data_file_type, data_file_type, file_type;
+type thermal_data_file, core_data_file_type, data_file_type, file_type;
+
+# debugfs
+type debugfs_rmt, debugfs_type, fs_type;
+
+# /sys
+type sysfs_fingerprint, sysfs_type, fs_type;
+type sysfs_pcie, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_wifi, sysfs_type, fs_type, mlstrustedobject;
+type sysfs_scsi_devices_0000, sysfs_type, fs_type;
+type sysfs_doubletap, sysfs_type, fs_type;
+type sysfs_lights, sysfs_type, fs_type;

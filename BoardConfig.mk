@@ -55,7 +55,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := kryo
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 kpti=off androidboot.usbconfigfs=true
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+# BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -173,11 +173,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += device/zuk/z2_plus-sepolicy/vendor
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/zuk/z2_plus-sepolicy/public
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/zuk/z2_plus-sepolicy/private
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/temp
-SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # VNDK
 BOARD_VNDK_VERSION := current
