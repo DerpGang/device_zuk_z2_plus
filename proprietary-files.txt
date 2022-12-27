@@ -40,9 +40,6 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so|91b9200dbb982abf0d6b440668252d892a616f66
 vendor/lib/rfsa/adsp/libvpp_frc.so|263c75014b0e75c6f0d20e61fe271e6511fa24a4
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so|535edf13dda82e200d8cfe6d704dfbcbd3d782f7
 
-# Amplifier
-lib64/libtfa98xx.so:vendor/lib64/libtfa98xx.so
-
 # Audio libraries - from LA.UM.7.5.r1-05300-8x96.0
 vendor/lib/libacdb-fts.so|ce5d9ee6188712bb55658fc00548aef96ec0ff17
 vendor/lib/libacdbloader.so|ca6463270557d44c4234685be53e844ba904dc6b
@@ -78,14 +75,14 @@ system/lib64/libmmrtpencoder.so|df4a7d6679003547cbafe38608d24b434ae23cf9
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
-# ACDB
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+# ACDB - from stock zui 4.0.199
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|40ce9f6df7e42530ab55fa2412281ffd3b40822d
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|476ad92e2e5e1df46d19161f33225a2b04b856eb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|c1c7bc9892997c13fbdb66c127d1a18d37ab2f0c
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|6f82ff71637cff91712510dc607647c5c8b7b83c
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|2cd48125ec3343bc813bb18e8e5c473b22661310
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|afdc6c398a71c139abcfef880a53c1600f3ed3ab
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|442a76790dcb364a02fc9ac10535dec9d4d9bbdf
 
 # Bluetooth - from cheeseburger - QKQ1.191014.012
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|fcf64033a163581f69a58984788b85576af8a51c
@@ -104,192 +101,192 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|203528c568c1c5ce33b35dcb9ee9eb7
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|d11a6abbaddbfee605c57a1a235c1da3011ee068
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|9eb88f44f2231ca4f39bee678e3f71de8ef6ebb4
 
-# Camera
-vendor/lib/libjni_filtergenerator.so
-vendor/lib/libjni_hazebuster.so
-vendor/lib/libjni_makeupV2.so
-vendor/lib/libjni_optizoom.so
-vendor/lib/libjni_seestraight.so
-vendor/lib/libjni_sharpshooter.so
-vendor/lib/libjni_trueportrait.so
-vendor/lib/libjni_truescanner_v2.so
-vendor/lib/libjni_ubifocus.so
-vendor/lib/libtrueportrait.so
-vendor/lib/libtruescanner.so
-vendor/bin/mm-qcamera-daemon
-vendor/lib/libchromaflash.so
-vendor/lib/libflash_pmic.so
-vendor/lib/libjni_dualcamera.so
-vendor/lib/libjpegdhw.so
-vendor/lib/libjpegdmahw.so
-vendor/lib/libjpegehw.so
-vendor/lib/libmorpho_image_stab4.so
-vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
-vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_mct.so
-vendor/lib/libmmcamera2_memleak.so
-vendor/lib/libmmcamera2_pp_buf_mgr.so
-vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so|efe8409a0380e87c68eaf3ad03ed0db3a27c8762
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/libmmcamera_dbg.so
-vendor/lib/libmmcamera_dummyalgo.so
-vendor/lib/libmmcamera_eebinparse.so
-vendor/lib/libmmcamera_eeprom_util.so
-vendor/lib/libmmcamera_eztune_module.so
-vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
-vendor/lib/libmmcamera_hvx_add_constant.so
-vendor/lib/libmmcamera_hvx_grid_sum.so
-vendor/lib/libmmcamera_hvx_zzHDR.so
-vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
-vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_paaf_lib.so
-vendor/lib/libmmcamera_pdafcamif.so
-vendor/lib/libmmcamera_pdaf.so
-vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
-vendor/lib/libmmcamera_sw2d_lib.so
-vendor/lib/libmmcamera_thread_services.so
-vendor/lib/libmmcamera_tintless_algo.so
-vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_tuning_lookup.so
-vendor/lib/libmmcamera_tuning.so
-vendor/lib/libmmjpeg.so
-vendor/lib/libmmqjpeg_codec.so
-vendor/lib/libmmqjpegdma.so
-vendor/lib/libmpbase.so
-vendor/lib/liboptizoom.so
-vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libqomx_jpegenc.so
-vendor/lib/libseemore.so
-vendor/lib/libubifocus.so
+# Camera - from stock zui 4.0.199
+vendor/lib/libjni_filtergenerator.so|c2d13425f5b6017b40bd16165ed5d7a3de7b316e
+vendor/lib/libjni_hazebuster.so|030abcca641973e5d4c76a58a70da91c6a5a8934
+vendor/lib/libjni_makeupV2.so|d91afa49c53673cf775bb69a59556d55e45cf85d
+vendor/lib/libjni_optizoom.so|de97ba9c722ea35e9e08e6375f88106bbae569e7
+vendor/lib/libjni_seestraight.so|a6d820fd6b224f937ef2f104d277c51ff2add8d6
+vendor/lib/libjni_sharpshooter.so|05da9e8494ae02ecfc1920250c1467c6768cdd0c
+vendor/lib/libjni_trueportrait.so|2e96deedf2b2ae32e02cecd972b62d281aa78435
+vendor/lib/libjni_truescanner_v2.so|becbdba306e43fd5e66fd66024380065148e7dcb
+vendor/lib/libjni_ubifocus.so|fdeda40a4dd7f95f1b8ba85d199e5c35ff2848ac
+vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef
+vendor/lib/libtruescanner.so|e9d44481cdfbb632a8669f6c77aac96c2215470c
+vendor/bin/mm-qcamera-daemon|cb53a9fa9dfa6455fba9df98f8aca7b7ec44aa50
+vendor/lib/libchromaflash.so|cf85560822e04014b8950a1abae9c2843069101d
+vendor/lib/libflash_pmic.so|658a6ca5ca3489294d72561d3cdd88a4b70d6db6
+vendor/lib/libjni_dualcamera.so|2cf4fc779d494ecbbca2fa5c971867c60b50c22a
+vendor/lib/libjpegdhw.so|f955a88691aafd4d8e507f20c048b32733e85367
+vendor/lib/libjpegdmahw.so|cb9356e1d40ee49136469a8dd3029168f5442619
+vendor/lib/libjpegehw.so|72397ff92ab7a6c2e0f160f165fdf565b2eaba07
+vendor/lib/libmorpho_image_stab4.so|abab1fa4be7c589bea20c4dcf40e10828e9f3938
+vendor/lib/libmmcamera2_c2d_module.so|679837ad035564e4b025610ea02a692d3881084a
+vendor/lib/libmmcamera2_cpp_module.so|a710b02e9a4ff495187b00859886e87c3b49cac1
+vendor/lib/libmmcamera2_frame_algorithm.so|1ac62282be754787d372a569cf947ad9acfbfa97
+vendor/lib/libmmcamera2_iface_modules.so|340174e2b9e0963a443641df46a25a053ff7c6f6
+vendor/lib/libmmcamera2_imglib_modules.so|1234490b2ae0189aef62f177356f6441e48e698f
+vendor/lib/libmmcamera2_isp_modules.so|a1737beaaa14e0b929a5b7d971e1af1a8857d170
+vendor/lib/libmmcamera2_is.so|bf10ad9ab34118c4c99a98381282810d8de72065
+vendor/lib/libmmcamera2_mct.so|d7581239f8ac245537b82c16ddedb05336cf9643
+vendor/lib/libmmcamera2_memleak.so|c86ff57f904e8cfb1e8c1b3a73f6deef38d2a083
+vendor/lib/libmmcamera2_pp_buf_mgr.so|e864e4fedc593d400441751f2367868e970a706a
+vendor/lib/libmmcamera2_pproc_modules.so|87549af02c7781e108e0a8bb5110af0e71e838f5
+vendor/lib/libmmcamera2_q3a_core.so|be52a5a7c032844fc873d86ec9cd31b88d595cf3
+vendor/lib/libmmcamera2_sensor_modules.so|2d27ced74413e498ca4ba5bab3684e73963ae6a1
+vendor/lib/libmmcamera2_stats_algorithm.so|66626c890accd602c5b06e385a23be701f7186a2
+vendor/lib/libmmcamera2_stats_modules.so|792d274df362d759bfee25417a3fe62853dc79bb
+vendor/lib/libmmcamera_dbg.so|13216386e62bf5e182a979ced40d632bdc29ed68
+vendor/lib/libmmcamera_dummyalgo.so|0bde193cd3315a9cc58357de356abf99846864db
+vendor/lib/libmmcamera_eebinparse.so|a2058266364b6ac841d82676618af79d4e3b22ad
+vendor/lib/libmmcamera_eeprom_util.so|d6074e4d09ba0d59c946808f52ed9621cd92f7cd
+vendor/lib/libmmcamera_eztune_module.so|11d1509b4d312347d2fc4d840d5d8a16204ee16c
+vendor/lib/libmmcamera_facedetection_lib.so|568558d14d2260fe00894682ccbc9096f1567f45
+vendor/lib/libmmcamera_faceproc2.so|27f802a68cc8aab70ba0637fd60e5d5c52f606a0
+vendor/lib/libmmcamera_faceproc.so|2b580dc5464b390586246ad3cc23efdf903a2833
+vendor/lib/libmmcamera_hdr_gb_lib.so|f55f9adfb679550d478a6231f8c71d42f104b77e
+vendor/lib/libmmcamera_hvx_add_constant.so|b872a378df2844fd70f26a27325b3c9a92698947
+vendor/lib/libmmcamera_hvx_grid_sum.so|e369fe2456e7039f112c86fde77e6391fa96912a
+vendor/lib/libmmcamera_hvx_zzHDR.so|856639652ce7f9ccaa5cbca8f6aeaf22c109ef73
+vendor/lib/libmmcamera_imglib_faceproc_adspstub.so|e519195b683578b8e403948e8750f73447040e49
+vendor/lib/libmmcamera_imglib.so|ae41b5b21468355db60bccaa785bbae582077f6d
+vendor/lib/libmmcamera_paaf_lib.so|1985b67edc7a43e44f2d8613711f04ad0669f04d
+vendor/lib/libmmcamera_pdafcamif.so|18b62fc504721dbefe2ef2999ff252c0de5b57d5
+vendor/lib/libmmcamera_pdaf.so|ad5bd921264aa97583b2441afa88909af97e83a2
+vendor/lib/libmmcamera_ppbase_module.so|9592aff7d708928100c27962d89cbd5c86694ad6
+vendor/lib/libmmcamera_ppeiscore.so|2b5e204d92b3329c792ab585c3291cb3621b99a3
+vendor/lib/libmmcamera_sw2d_lib.so|6b658035b66c3eff15bd588148f9ef44d89dd521
+vendor/lib/libmmcamera_thread_services.so|648a348cf4e2db86830fff1bf220a39cb3e46dc8
+vendor/lib/libmmcamera_tintless_algo.so|998baa6a539d234d50b2d90227901df4ba287a51
+vendor/lib/libmmcamera_tintless_bg_pca_algo.so|7e3557dddbf9aad343acfab543d6f3564aced67c
+vendor/lib/libmmcamera_tuning_lookup.so|9fc07e61cdc8624c7be4509457a66010c2b656d5
+vendor/lib/libmmcamera_tuning.so|abb91c7d9c2bcbd0dd2a9be10dec6835196fa04f
+vendor/lib/libmmjpeg.so|fa7f7532db31076e3acd8d988dd1a7a75c72ee97
+vendor/lib/libmmqjpeg_codec.so|ff018b6d78810beb68737cb3a93994341b09226b
+vendor/lib/libmmqjpegdma.so|82a74b9278c72e8472af599c74664311ffe0dbe5
+vendor/lib/libmpbase.so|a7095e3e421189ebda7764969e9e952351384944
+vendor/lib/liboptizoom.so|1e92993743636c045438f1f15c07c1e835d9ca46
+vendor/lib/libqomx_jpegdec.so|dfe453d442d441b2a32a44213d6093fb05d1f9c4
+vendor/lib/libqomx_jpegenc_pipe.so|ee5798099b791ede52cc98ce2268a525ced4a1c1
+vendor/lib/libqomx_jpegenc.so|2abf69b1a0751d14cdea8d953737fa5508dc41dd
+vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
+vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed
 
-# Camera actuator
-vendor/lib/libactuator_dw9767.so
+# Camera actuator - from stock zui 4.0.199
+vendor/lib/libactuator_dw9767.so|9f6792ef634727ea3f08c7acc7f01b782e9a5fc7
 
-# Camera chromatix
-vendor/lib/libchromatix_ov8865_common.so
-vendor/lib/libchromatix_ov8865_cpp_ds_chromatix.so
-vendor/lib/libchromatix_ov8865_cpp_hfr_120.so
-vendor/lib/libchromatix_ov8865_cpp_hfr_60.so
-vendor/lib/libchromatix_ov8865_cpp_hfr_90.so
-vendor/lib/libchromatix_ov8865_cpp_liveshot.so
-vendor/lib/libchromatix_ov8865_cpp_preview.so
-vendor/lib/libchromatix_ov8865_cpp_snapshot.so
-vendor/lib/libchromatix_ov8865_cpp_us_chromatix.so
-vendor/lib/libchromatix_ov8865_cpp_video_full.so
-vendor/lib/libchromatix_ov8865_cpp_video.so
-vendor/lib/libchromatix_ov8865_default_preview_none.so
-vendor/lib/libchromatix_ov8865_default_video_none.so
-vendor/lib/libchromatix_ov8865_default_video.so
-vendor/lib/libchromatix_ov8865_hfr_120_none.so
-vendor/lib/libchromatix_ov8865_hfr_120.so
-vendor/lib/libchromatix_ov8865_hfr_60_none.so
-vendor/lib/libchromatix_ov8865_hfr_60.so
-vendor/lib/libchromatix_ov8865_hfr_90_none.so
-vendor/lib/libchromatix_ov8865_hfr_90.so
-vendor/lib/libchromatix_ov8865_postproc.so
-vendor/lib/libchromatix_ov8865_preview.so
-vendor/lib/libchromatix_ov8865_snapshot.so
-vendor/lib/libchromatix_ov8865_video_full.so
-vendor/lib/libchromatix_ov8865_zsl_preview.so
-vendor/lib/libchromatix_ov8865_zsl_video.so
-vendor/lib/libchromatix_s5k2m8sx_common.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_120.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_60.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_90.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_liveshot.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_preview.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_snapshot.so
-vendor/lib/libchromatix_s5k2m8sx_cpp_video.so
-vendor/lib/libchromatix_s5k2m8sx_default_preview_dw9767.so
-vendor/lib/libchromatix_s5k2m8sx_default_video_dw9767.so
-vendor/lib/libchromatix_s5k2m8sx_default_video.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_120_dw9767.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_120.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_60_dw9767.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_60.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_90_dw9767.so
-vendor/lib/libchromatix_s5k2m8sx_hfr_90.so
-vendor/lib/libchromatix_s5k2m8sx_liveshot.so
-vendor/lib/libchromatix_s5k2m8sx_postproc.so
-vendor/lib/libchromatix_s5k2m8sx_preview.so
-vendor/lib/libchromatix_s5k2m8sx_snapshot.so
-vendor/lib/libchromatix_s5k2m8sx_zsl_preview_dw9767.so
-vendor/lib/libchromatix_s5k2m8sx_zsl_video_dw9767.so
+# Camera chromatix - from stock zui 4.0.199
+vendor/lib/libchromatix_ov8865_common.so|4dc34fc7d863b1402487a8b0db2e08729cc2fa5f
+vendor/lib/libchromatix_ov8865_cpp_ds_chromatix.so|cbd15df8d8911bc69a23687941320822af483208
+vendor/lib/libchromatix_ov8865_cpp_hfr_120.so|2e10c915911cf1594a72e2c931911679818a003e
+vendor/lib/libchromatix_ov8865_cpp_hfr_60.so|7f2c08929f0803b23a782e28c3b8610c262d044b
+vendor/lib/libchromatix_ov8865_cpp_hfr_90.so|3eb2dd4f0b477f73a323ef2912d6fc8e6bb152fe
+vendor/lib/libchromatix_ov8865_cpp_liveshot.so|6f27a6483d761c24b22655ccc9a57078d7cc2675
+vendor/lib/libchromatix_ov8865_cpp_preview.so|0d337d5f71f266c62c8182a1dea9606ea8b9060d
+vendor/lib/libchromatix_ov8865_cpp_snapshot.so|c163eff88de1d642a5d3bf5728bb8306c0feb8a8
+vendor/lib/libchromatix_ov8865_cpp_us_chromatix.so|b4c45e2fb196b1e1b79328a92ca29450ff6641ef
+vendor/lib/libchromatix_ov8865_cpp_video_full.so|29873035bd3eaa2657362c493b3941e64cfdd5ff
+vendor/lib/libchromatix_ov8865_cpp_video.so|6f94ad4ad2443cf661e1d03ee24978d290c88eb8
+vendor/lib/libchromatix_ov8865_default_preview_none.so|9de77bf18e349c65eed6be633f5a009b4dc1c1b3
+vendor/lib/libchromatix_ov8865_default_video_none.so|8dfbd84a3dc46a0f42a7bcb86302a1a84524a7f4
+vendor/lib/libchromatix_ov8865_default_video.so|611bc116050b0e94958fb1e6128a371510617da9
+vendor/lib/libchromatix_ov8865_hfr_120_none.so|44647fb47386b42cdd16171ff01f1f20136d305e
+vendor/lib/libchromatix_ov8865_hfr_120.so|c511f36b9ed52711724eab53cb0d254fbed55c14
+vendor/lib/libchromatix_ov8865_hfr_60_none.so|55fb4a48bd2616c5c6b3fb1c0a7a10ca8abfc535
+vendor/lib/libchromatix_ov8865_hfr_60.so|b9a5ea51ea60ac27cb2c031e9f25de8f63967448
+vendor/lib/libchromatix_ov8865_hfr_90_none.so|e08e328f8db4f78f080d7490e9319b2cc4c89db4
+vendor/lib/libchromatix_ov8865_hfr_90.so|111dbb68bce7db5c8e8938e46efd018f6df4d7d2
+vendor/lib/libchromatix_ov8865_postproc.so|36fd397ac040441870bb4bef612bba5e4a159a69
+vendor/lib/libchromatix_ov8865_preview.so|7e699438ae2f99a3dcfd38c6858279517919ee48
+vendor/lib/libchromatix_ov8865_snapshot.so|f283d34fbbe6ddb6e2846fa37c977e54bb843a4d
+vendor/lib/libchromatix_ov8865_video_full.so|73673b518ce8c36d4755a962b09394521149ab30
+vendor/lib/libchromatix_ov8865_zsl_preview.so|dcb6555d77f305a4403b3111b140c52d7c841a9f
+vendor/lib/libchromatix_ov8865_zsl_video.so|796d3789a6a354726d3b938bcfba7cc5ecbb210b
+vendor/lib/libchromatix_s5k2m8sx_common.so|fac9335897f14269818efbcc29bae85f251dc703
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_120.so|d691f7cb32f3b50680ca7d74c35cd9cbd2b1ea3d
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_60.so|439a4c92804b6aa9b1d0d88ab068834c3d34efc1
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_90.so|2391da37688eca11556d3af4737e37b04130a04f
+vendor/lib/libchromatix_s5k2m8sx_cpp_liveshot.so|0da7ee003368c56a3041fb83dad1e68f9e710bb9
+vendor/lib/libchromatix_s5k2m8sx_cpp_preview.so|ac40d5f1b01dd42cf1290560965e2c03cb866245
+vendor/lib/libchromatix_s5k2m8sx_cpp_snapshot.so|24a663162eff6ca50d053c49a7054c3fb0ff09fc
+vendor/lib/libchromatix_s5k2m8sx_cpp_video.so|bf7fe8911a23afbddecf38001d2ba20ff1e82ebe
+vendor/lib/libchromatix_s5k2m8sx_default_preview_dw9767.so|9de12025a7da70d7d4c63f6bc26d347af74d89f1
+vendor/lib/libchromatix_s5k2m8sx_default_video_dw9767.so|9d9a4b2f26e23f5739f9f665e7b2845eb204d1cc
+vendor/lib/libchromatix_s5k2m8sx_default_video.so|761663e7fcd8de8d1ad998e46461eb4c6f216885
+vendor/lib/libchromatix_s5k2m8sx_hfr_120_dw9767.so|273b7c6463a260f2422e0f609292b72cef86d5ef
+vendor/lib/libchromatix_s5k2m8sx_hfr_120.so|64bc2fbcc68f4be26003e7ab98bbd407fc381eba
+vendor/lib/libchromatix_s5k2m8sx_hfr_60_dw9767.so|fac378b57980e0c90489684dcea9ddc5e1191e15
+vendor/lib/libchromatix_s5k2m8sx_hfr_60.so|ad2cff3da21ce4daadaafa49c34e190f18c9518b
+vendor/lib/libchromatix_s5k2m8sx_hfr_90_dw9767.so|dba5e2614cd2d863ef0bff2c8928550a276b087c
+vendor/lib/libchromatix_s5k2m8sx_hfr_90.so|afa3abbc2f27d844b3143b388a1aa061c2bcda32
+vendor/lib/libchromatix_s5k2m8sx_liveshot.so|f5fc0030a7b7d0bf756f8e904dc71325c3377846
+vendor/lib/libchromatix_s5k2m8sx_postproc.so|656605162345755105e6e7dbb75f37b0c6f20f49
+vendor/lib/libchromatix_s5k2m8sx_preview.so|a749d8a8e3f0f81bc8cd9c215a69c8225f1eee24
+vendor/lib/libchromatix_s5k2m8sx_snapshot.so|cac63771096543a0120f23329de2b57a61c7323f
+vendor/lib/libchromatix_s5k2m8sx_zsl_preview_dw9767.so|e4d5e1d7b515ac977fee8637531185a3341eeed1
+vendor/lib/libchromatix_s5k2m8sx_zsl_video_dw9767.so|703c956388e1393693b22f831106e978db6da0b1
 
-# Camera firmware
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
+# Camera firmware - from stock zui 4.0.199
+vendor/firmware/cpp_firmware_v1_10_0.fw|cf9458601aa4bbe9c57acfc1c7d0f158386ace9f
+vendor/firmware/cpp_firmware_v1_1_1.fw|04b8eb253d630eaeadab296e1607dc6a29d93d3c
+vendor/firmware/cpp_firmware_v1_12_0.fw|d60bbc7a90ad71564f9ea0d5fad8fe337647fa4c
+vendor/firmware/cpp_firmware_v1_1_6.fw|6b2c9fe0a43a9ce86a921e18faffe4d0a35746ee
+vendor/firmware/cpp_firmware_v1_2_0.fw|5ff0d66bcdbb29f4e924d011ae825583e48b3962
+vendor/firmware/cpp_firmware_v1_4_0.fw|11eba982212797920102912142940a9e08931c52
+vendor/firmware/cpp_firmware_v1_5_0.fw|ac19cd179b7b118bb3ea01a35fdfc78dc58164a1
+vendor/firmware/cpp_firmware_v1_5_2.fw|58dd7f7c09dbb62bc6f334a8885064b292610675
+vendor/firmware/cpp_firmware_v1_6_0.fw|dcd3d1f904c7ee3d731f8f28b5f78f2503916ada
+vendor/firmware/cpp_firmware_v1_8_0.fw|26e2badbb4e3049243f0a176722f26879e7b87e8
 
-# Camera eeprom
-vendor/lib/libmmcamera_gt24c08h_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c64_eeprom.so
+# Camera eeprom - from stock zui 4.0.199
+vendor/lib/libmmcamera_gt24c08h_eeprom.so|7b2b7427d7d4f2818cbfb5548f9c02eba30d6ae4
+vendor/lib/libmmcamera_onsemi_cat24c64_eeprom.so|281544658c71f99e2791e8ab85fb4f3d02c7abef
 
-# Camera sensors
-vendor/lib/libmmcamera_isp_abf47.so
-vendor/lib/libmmcamera_isp_aec_bg_stats47.so
-vendor/lib/libmmcamera_isp_bf_stats47.so
-vendor/lib/libmmcamera_isp_bg_stats46.so
-vendor/lib/libmmcamera_isp_bhist_stats44.so
-vendor/lib/libmmcamera_isp_black_level47.so
-vendor/lib/libmmcamera_isp_bpc47.so
-vendor/lib/libmmcamera_isp_cac47.so
-vendor/lib/libmmcamera_isp_chroma_enhan40.so
-vendor/lib/libmmcamera_isp_chroma_suppress40.so
-vendor/lib/libmmcamera_isp_clamp_encoder40.so
-vendor/lib/libmmcamera_isp_clamp_video40.so
-vendor/lib/libmmcamera_isp_clamp_viewfinder40.so
-vendor/lib/libmmcamera_isp_color_correct46.so
-vendor/lib/libmmcamera_isp_color_xform_encoder46.so
-vendor/lib/libmmcamera_isp_color_xform_video46.so
-vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so
-vendor/lib/libmmcamera_isp_cs_stats46.so
-vendor/lib/libmmcamera_isp_demosaic47.so
-vendor/lib/libmmcamera_isp_demux40.so
-vendor/lib/libmmcamera_isp_fovcrop_encoder46.so
-vendor/lib/libmmcamera_isp_fovcrop_video46.so
-vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so
-vendor/lib/libmmcamera_isp_gamma44.so
-vendor/lib/libmmcamera_isp_gic46.so
-vendor/lib/libmmcamera_isp_gtm46.so
-vendor/lib/libmmcamera_isp_hdr46.so
-vendor/lib/libmmcamera_isp_hdr_be_stats46.so
-vendor/lib/libmmcamera_isp_ihist_stats46.so
-vendor/lib/libmmcamera_isp_linearization40.so
-vendor/lib/libmmcamera_isp_ltm47.so
-vendor/lib/libmmcamera_isp_mce40.so
-vendor/lib/libmmcamera_isp_mesh_rolloff44.so
-vendor/lib/libmmcamera_isp_pedestal_correct46.so
-vendor/lib/libmmcamera_isp_rs_stats46.so
-vendor/lib/libmmcamera_isp_scaler_encoder46.so
-vendor/lib/libmmcamera_isp_scaler_video46.so
-vendor/lib/libmmcamera_isp_scaler_viewfinder46.so
-vendor/lib/libmmcamera_isp_sce40.so
-vendor/lib/libmmcamera_isp_snr47.so
-vendor/lib/libmmcamera_isp_sub_module.so
-vendor/lib/libmmcamera_ov8856.so
-vendor/lib/libmmcamera_ov8865.so|68d6897c106c911ce3100a03643ef197
-vendor/lib/libmmcamera_s5k2m8sx.so
+# Camera sensors - from stock zui 4.0.199
+vendor/lib/libmmcamera_isp_abf47.so|87e63136b2f018e1f9bb9ac2d3f484f0ea0a62cb
+vendor/lib/libmmcamera_isp_aec_bg_stats47.so|efb554b2f77bfd8ff80ef69a8e92e2631ac31571
+vendor/lib/libmmcamera_isp_bf_stats47.so|1e2ed7df7a819f1847c546037b59caa2195b8a00
+vendor/lib/libmmcamera_isp_bg_stats46.so|63ca0c669896d1252f959e9552328c918df65bfe
+vendor/lib/libmmcamera_isp_bhist_stats44.so|bb249059b5423c9aed680b8479e9dd50289ca230
+vendor/lib/libmmcamera_isp_black_level47.so|95ed67bfa695ae147076261e4e542ef580fb2d42
+vendor/lib/libmmcamera_isp_bpc47.so|ad3d6eca45fe534c28330dd2940acfaf81b68fab
+vendor/lib/libmmcamera_isp_cac47.so|ab1e1ace604b1b1b870c824943eee18c410a64f4
+vendor/lib/libmmcamera_isp_chroma_enhan40.so|1f15dbe8feda9d36763c67e76b58428139d46179
+vendor/lib/libmmcamera_isp_chroma_suppress40.so|b7d8aab83c5bb275d218251f334b9a5a754f7c7b
+vendor/lib/libmmcamera_isp_clamp_encoder40.so|a31b40167a1f0468c430f6415aac1528f9f9e953
+vendor/lib/libmmcamera_isp_clamp_video40.so|60527bfd3e989025fab46ec06da76cb9b9fa2aa8
+vendor/lib/libmmcamera_isp_clamp_viewfinder40.so|4dadade46a128f470f9b54a5a5d29f71360143bb
+vendor/lib/libmmcamera_isp_color_correct46.so|ab42275f0f50cdfe5b4fe517646f3e7589135e48
+vendor/lib/libmmcamera_isp_color_xform_encoder46.so|69c8427be367926f711c1bc11916c97808bd390b
+vendor/lib/libmmcamera_isp_color_xform_video46.so|c7e576ff0920d1d2c3de9dc94652233987e00d67
+vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so|0bc4c9858ae7d91074bf30db4b0a451873c53b9a
+vendor/lib/libmmcamera_isp_cs_stats46.so|7b76044f5e9c814fad692909f3bde1a7405575af
+vendor/lib/libmmcamera_isp_demosaic47.so|4b856434a671451fd2b58e10888b7411a5cf12cd
+vendor/lib/libmmcamera_isp_demux40.so|b4c8036831fa298710049d70f832d3dcb30015bf
+vendor/lib/libmmcamera_isp_fovcrop_encoder46.so|a52c53c01274d9445a6839a6288d2a3495a56a47
+vendor/lib/libmmcamera_isp_fovcrop_video46.so|ed16ad9b55b0ccc557d8d801d6170cbdcbd2967b
+vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so|ef27efee562b6ee247c176451a087df45dd67adc
+vendor/lib/libmmcamera_isp_gamma44.so|95b98b94d8f56acf08fb702445cec5c3a085d513
+vendor/lib/libmmcamera_isp_gic46.so|8fea48c7ba7c1de1c01e841b2f02c30efbfd6f3b
+vendor/lib/libmmcamera_isp_gtm46.so|f88fc08d4428dcdca9436f3c09d005b25e0228b7
+vendor/lib/libmmcamera_isp_hdr46.so|b5b6706f045f219d0a390b3a9fdb2aeeb76dd24f
+vendor/lib/libmmcamera_isp_hdr_be_stats46.so|0782e118023256385c004c3814e7cbb06f6190c0
+vendor/lib/libmmcamera_isp_ihist_stats46.so|935449631dc4c33b16b9e775a2b7dc3df9936a0b
+vendor/lib/libmmcamera_isp_linearization40.so|834237b0290a62a24d57464c45923b97b6372959
+vendor/lib/libmmcamera_isp_ltm47.so|4a9d3d997324ba9e2c4a66667b394ed6749eafb1
+vendor/lib/libmmcamera_isp_mce40.so|55fe04110c9196d97ed8c1ee7350c89360e147e4
+vendor/lib/libmmcamera_isp_mesh_rolloff44.so|accd233a0019e34fd1b554ad1c5a8be85fa38ef7
+vendor/lib/libmmcamera_isp_pedestal_correct46.so|23201204576a094aa28327bc3d97d73fa2c86fb4
+vendor/lib/libmmcamera_isp_rs_stats46.so|fd1b88f1b8bdebbabd1c005aa0c529fab575f2cb
+vendor/lib/libmmcamera_isp_scaler_encoder46.so|2e490598b7a76354afc4c05647e4ae29b7d639ec
+vendor/lib/libmmcamera_isp_scaler_video46.so|49005fc9bb23f8dc22b7e5cd939e157173444571
+vendor/lib/libmmcamera_isp_scaler_viewfinder46.so|64bb16588b616eedf7faacd321313400600389ab
+vendor/lib/libmmcamera_isp_sce40.so|d719e5b83ec5aafb97fc93499675f31698369ade
+vendor/lib/libmmcamera_isp_snr47.so|4d61aa22a53946f2d866da8f0eb7dae103699a53
+vendor/lib/libmmcamera_isp_sub_module.so|1d56e580f6055eab64926235b0f3092939a78414
+vendor/lib/libmmcamera_ov8856.so|47e75b49dfc1b54008a0efa1efcef2e15ff73223
+vendor/lib/libmmcamera_ov8865.so|451b80ea98adfb2a962bc89141ef5608d2376d58
+vendor/lib/libmmcamera_s5k2m8sx.so|41f6dd85b55b6320bcd4447900d7b4a03ecca9c0
 
 # CNE - from LA.UM.9.6.2.r1-04100-89xx.0
 system_ext/lib64/com.quicinc.cne.api@1.0.so|8e0491212ff86795958a17b82f4dcad76b16e954
@@ -357,8 +354,6 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|07bf28004086b972367c44703bd02
 vendor/lib64/vendor.qti.data.mwqem@1.0.so|afd8e1cebacec9c59166678570e7bb7b035445b1
 vendor/lib64/vendor.qti.latency@2.0.so|909bc76c76252f0824474f1b6c52dac7142c9c55
 
-# DPM - from LA.UM.9.6.2.r1-04100-89xx.0
-
 # DRM - from LA.UM.9.6.2.r1-04100-89xx.0
 vendor/bin/qseecomd|12fde638ad4528c06fe336342862fd0ffc033dd0
 vendor/lib/libQSEEComAPI.so|961b8c99bf5d2a53b607cebf399fbdafb48c9bc6
@@ -381,10 +376,10 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff1906
 vendor/lib64/libwvhidl.so|4d709bdd56c64ad14c8a66bc45007138c81ec252
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ea7038bdc341cddc3f7803367e47c91c2ee6672f
 
-# Fingerprint
-system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/fingerprint.qcom.so:vendor/lib64/hw/fingerprint.qcom.so
+# Fingerprint - from stock zui 4.0.199
+system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar|2c20d8227ec2885f48b12cefda021af3ed3cb355
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|4e98e283bd3e414fb2b6f2525b86d111d58ad857
+vendor/lib64/hw/fingerprint.qcom.so:vendor/lib64/hw/fingerprint.qcom.so|2bb59001a5809c7529ec3017a16e5599eb4f6219
 
 # Gatekeeper - from LA.UM.8.6.r1-04400-89xx.0
 vendor/lib/hw/gatekeeper.msm8953.so:vendor/lib/hw/gatekeeper.msm8996.so|73b6ae8dfe405c2f20af1ef9364bd37eb9809438
@@ -542,17 +537,17 @@ vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 vendor/lib64/libswvdec.so|f2ca69b50c339ce350eb4e6c151db19de3e5c9a9
 vendor/lib64/libvpplibrary.so|30e8e7cf1495fb88162beeb65e6273f28563b43b
 
-# gpu firmware
-vendor/firmware/a530_gpmu.fw2
-vendor/firmware/a530_pfp.fw
-vendor/firmware/a530_pm4.fw
-vendor/firmware/a530_zap.b02
-vendor/firmware/a530_zap.mdt
-vendor/firmware/a530v1_pfp.fw
-vendor/firmware/a530v1_pm4.fw
-vendor/firmware/a530v2_seq.fw2
-vendor/firmware/a530v3_gpmu.fw2
-vendor/firmware/a530v3_seq.fw2
+# gpu firmware - from stock zui 4.0.199
+vendor/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
+vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
+vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
+vendor/firmware/a530_zap.b02|657ce04bbb8cc88ccead7c22ed1e3ca1776c7518
+vendor/firmware/a530_zap.mdt|cb197672d7d6f37817ddd4cbf59144db6e787f06
+vendor/firmware/a530v1_pfp.fw|0864291b99bed712edfcffa94be7b4595d3af306
+vendor/firmware/a530v1_pm4.fw|6a82a4fb4035fa2a933c1a26b5535d7ec7c0ac4c
+vendor/firmware/a530v2_seq.fw2|63b6d25594a5c1f4217d996a2b636e17a29fc840
+vendor/firmware/a530v3_gpmu.fw2|0a2f6f450231673d75ba39e5d28776db3becf810
+vendor/firmware/a530v3_seq.fw2|8963a53acc689725dee4b22881a4dd4b80e5def8
 
 # QMI - from LA.UM.9.6.2.r1-04100-89xx.0
 vendor/lib/libpdmapper.so|c8f48eeef2bcdabec913395fd698f29aa39ad18f
@@ -753,17 +748,17 @@ vendor/radio/qcril_database/qcril.db|43b7d5e7ededc9cd5c0b1f7a8941d21d4eb0c9c1
 vendor/bin/imsdatadaemon|56e1ab6f6f6679261bcd36dd218097632da866b6
 vendor/bin/imsqmidaemon|0e5cf08e7cbd4e34fb69e6644a8c7d5e6715c306
 
-# IPA
-vendor/bin/ipacm-diag
+# IPA - from stock zui 4.0.199
+vendor/bin/ipacm-diag|ece6b650795bd946a034a0358421e4d424f067ea
 
 # Keystore - from LA.UM.8.6.r1-04400-89xx.0
 vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8996.so|72b2f258cce7e42aebf8891857f65c741d5ea179
 vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8996.so|9ad2d76083fd4cc79d258cd47ae5e20c005d8ae9
 
-# Listen
-vendor/lib/hw/sound_trigger.primary.msm8996.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libsmwrapper.so
+# Listen - from stock zui 4.0.199
+vendor/lib/hw/sound_trigger.primary.msm8996.so|109ca430806e976a56b2bc6c94fd8332c5d105fb
+vendor/lib/libadpcmdec.so|7a38d6b28b27cf663681ad077614a03164418f91
+vendor/lib/libsmwrapper.so|f0ee761c02c888e77d947bb87d162d9379bc1530
 
 # Peripheral manager - from LA.UM.9.6.2.r1-04100-89xx.0
 vendor/bin/pm-proxy|782599642da7fbfc21f5e9a9965d898efeb75859
@@ -813,11 +808,11 @@ vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e157937
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|933eb7026797f3dadad3d10fd69443b11f6563f3
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|16baab27397ad493e845515c20ac0c0c063c775d
 
-# WiFi Firmware
-etc/firmware/bdwlan30.bin:vendor/firmware/bdwlan30.bin
+# WiFi Firmware - from stock zui 4.0.199
+etc/firmware/bdwlan30.bin:vendor/firmware/bdwlan30.bin|45fdad0f323667fa95b88fa054e10a397fc8f0eb
 
-# WiFi
-vendor/bin/cnss-daemon
+# WiFi - from stock zui 4.0.199
+vendor/bin/cnss-daemon|9e0cb88838579e97af6ff4cfab020a8e1b8e6905
 
 # WiFi Display - from LA.UM.9.6.2.r1-04100-89xx.0
 system/bin/wfdservice|96a583c0efeaf90352b26c20c904ee156238b90f
