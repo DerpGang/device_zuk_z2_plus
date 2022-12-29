@@ -517,6 +517,11 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     thermal.msm8996
 
+# TimeKeep
+PRODUCT_PACKAGES += \
+    TimeKeep \
+    timekeep
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0-java \

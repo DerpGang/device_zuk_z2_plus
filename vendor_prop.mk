@@ -258,7 +258,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.procedure_bytes=SKIP \
     persist.vendor.data.iwlan.enable=true \
     ro.telephony.iwlan_operation_mode=legacy \
-    persist.vendor.qti.telephony.vt_cam_interface=1
+    persist.vendor.qti.telephony.vt_cam_interface=1 \
+    ro.telephony.block_binder_thread_on_incoming_calls=false
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \

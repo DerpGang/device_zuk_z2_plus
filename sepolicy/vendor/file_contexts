@@ -35,3 +35,6 @@
 /sys/devices/platform/soc/soc:fpc1020/proximity_state         u:object_r:sysfs_fingerprint:s0
 /sys/devices/platform/soc/soc:fpc1020/irq                     u:object_r:sysfs_fingerprint:s0
 /sys/devices/platform/soc/soc:fpc1020/utouch_disable          u:object_r:sysfs_fingerprint:s0
+
+# time
+/(system/vendor|vendor)/bin/timekeep                          u:object_r:timekeep_exec:s0

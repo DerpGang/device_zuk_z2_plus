@@ -204,9 +204,6 @@ on post-fs-data
     mkdir /dev/socket/wifihal 0770 wifi wifi
     chmod 2770 /dev/socket/wifihal
 
-    # Create /data/time folder for time-services
-    mkdir /data/vendor/time/ 0700 system system
-
     setprop vold.post_fs_data_done 1
 
     # Secure Element directory for loader service functionality
@@ -630,7 +627,6 @@ on property:vold.decrypt=trigger_reset_main
 on property:vold.decrypt=trigger_shutdown_framework
     stop audio-hal-2-0
 on property:vold.decrypt=trigger_restart_min_framework
-    start time_daemon
     start audio-hal-2-0
 
 on property:vold.decrypt=trigger_restart_framework

@@ -6,3 +6,6 @@ persist.net.doxlat                               u:object_r:vendor_xlat_prop:s0
 
 # Qseecomd
 sys.listeners.registered                         u:object_r:vendor_tee_listener_prop:s0
+
+# vendor_timekep_prop
+persist.vendor.timeadjust              u:object_r:vendor_timekeep_prop:s0

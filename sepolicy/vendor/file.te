@@ -13,3 +13,7 @@ type sysfs_wifi, sysfs_type, fs_type, mlstrustedobject;
 type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 type sysfs_doubletap, sysfs_type, fs_type;
 type sysfs_lights, sysfs_type, fs_type;
+type sysfs_msm_subsys, sysfs_type, fs_type;
+
+# time
+type timekeep_vendor_data_file, file_type, data_file_type;
