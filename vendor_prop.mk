@@ -156,7 +156,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     debug.hwui.renderer=skiagl \
     debug.renderengine.backend=skiaglthreaded \
-    renderthread.skia.reduceopstasksplitting=true
+    renderthread.skia.reduceopstasksplitting=true \
+    debug.hwui.skia_atrace_enabled=false
 
 # Blur
 PRODUCT_PROPERTY_OVERRIDES += \
