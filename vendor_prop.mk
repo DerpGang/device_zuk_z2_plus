@@ -107,6 +107,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.renderengine.backend=skiaglthreaded \
     debug.renderengine.backend=skiaglthreaded \
     renderthread.skia.reduceopstasksplitting=true \
+    debug.hwui.skia_atrace_enabled=false \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
