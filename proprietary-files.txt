@@ -71,10 +71,6 @@ system/lib/libmmrtpencoder.so|3d334ce2c3073a09835605db781bd7a791cce1f5
 system/lib64/libmmrtpdecoder.so|719a126cc557a8512d73e9e148cb9bdfb7830c11
 system/lib64/libmmrtpencoder.so|df4a7d6679003547cbafe38608d24b434ae23cf9
 
-# Bluetooth (aptX) - from crosshatch - RQ1A.201205.003
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-
 # ACDB - from stock zui 4.0.199
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|40ce9f6df7e42530ab55fa2412281ffd3b40822d
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|476ad92e2e5e1df46d19161f33225a2b04b856eb
