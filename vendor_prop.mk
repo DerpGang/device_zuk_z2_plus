@@ -46,6 +46,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth profiles
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.profile.asha.central.enabled?=true \
+    bluetooth.le.disable_apcf_extended_features=1 \
     bluetooth.profile.a2dp.source.enabled?=true \
     bluetooth.profile.avrcp.target.enabled?=true \
     bluetooth.profile.bap.broadcast.assist.enabled?=true \
