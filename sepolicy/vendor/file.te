@@ -17,3 +17,6 @@ type sysfs_msm_subsys, sysfs_type, fs_type;
 
 # time
 type timekeep_vendor_data_file, file_type, data_file_type;
+
+# Netmgr
+type netmgr_data_file, file_type, data_file_type;

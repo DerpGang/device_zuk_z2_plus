@@ -35,6 +35,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Car
 # Apex
 PRODUCT_COMPRESSED_APEX := false
 
+# Shims
+PRODUCT_PACKAGES += \
+    libcutils_shim.vendor \
+
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml \
@@ -223,10 +227,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.0-service.zuk
 
-# fwk-detect
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect
-
 # Google Photos
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/pixel/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
@@ -315,6 +315,17 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     libstdc++.vendor \
 
+# IMS
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.2.vendor \
+    ims-ext-common \
+    ims_ext_common.xml
+
+# fwk-detect
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
@@ -337,14 +348,13 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.0 \
+    android.hardware.radio.config@1.1 \
     android.hardware.radio.config@1.2.vendor \
     telephony-ext \
     ims-ext-common_system \
-    android.hardware.secure_element@1.0 \
-    android.hardware.secure_element@1.0.vendor \
-    ims-ext-common \
-    ims_ext_common.xml
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
@@ -429,7 +439,11 @@ PRODUCT_PACKAGES += \
 # QTI Telephony Utils
 PRODUCT_PACKAGES += \
     qti-telephony-utils \
-    qti_telephony_utils.xml
+    qti_telephony_utils.xml \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml
 
 # QTI VNDK Framework Detect
 PRODUCT_PACKAGES += \
