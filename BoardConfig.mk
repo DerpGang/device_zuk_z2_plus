@@ -19,6 +19,8 @@ DEVICE_PATH := device/zuk/z2_plus
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := z2,Z2,z2plus,z2_plus
 
