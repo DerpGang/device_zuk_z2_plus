@@ -20,7 +20,7 @@ import os
 import sys
 from hashlib import sha1
 
-device='msm8996-common'
+device='z2_plus'
 vendor='zuk'
 
 with open('proprietary-files.txt', 'r') as f:

@@ -1,5 +1,14 @@
 # Default: z2_row - OPR1.170623.032.4.0.247_181017
 
+# Audio ACDB - from z2_plus - OPR1.170623.032.4.0.199_181018
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+
 # ADSP - from daisy - QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/bin/adsprpcd|a5e878691577485c9f7ee33dfe02384a13f0a265
 vendor/lib64/libadsprpc.so|3dd28423f6b786584a1c80b2cdb6e22a1c00b0ae
@@ -152,6 +161,38 @@ vendor/lib64/liboptizoom.so:lib64/liboptizoom.so
 vendor/lib64/libseemore.so
 vendor/lib64/libubifocus.so:lib64/libubifocus.so
 
+# Camera actuator - from z2_plus - OPR1.170623.032.4.0.199_181018
+vendor/lib/libactuator_dw9767.so
+
+# Camera chromatix - from z2_plus - OPR1.170623.032.4.0.199_181018
+vendor/lib/libchromatix_s5k2m8sx_common.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_liveshot.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_preview.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_snapshot.so
+vendor/lib/libchromatix_s5k2m8sx_cpp_video.so
+vendor/lib/libchromatix_s5k2m8sx_default_preview_dw9767.so
+vendor/lib/libchromatix_s5k2m8sx_default_video_dw9767.so
+vendor/lib/libchromatix_s5k2m8sx_default_video.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_120_dw9767.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_120.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_60_dw9767.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_60.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_90_dw9767.so
+vendor/lib/libchromatix_s5k2m8sx_hfr_90.so
+vendor/lib/libchromatix_s5k2m8sx_liveshot.so
+vendor/lib/libchromatix_s5k2m8sx_postproc.so
+vendor/lib/libchromatix_s5k2m8sx_preview.so
+vendor/lib/libchromatix_s5k2m8sx_snapshot.so
+vendor/lib/libchromatix_s5k2m8sx_zsl_preview_dw9767.so
+vendor/lib/libchromatix_s5k2m8sx_zsl_video_dw9767.so
+
+# Camera configs - from z2_plus - OPR1.170623.032.4.0.199_181018
+etc/camera/msm8996_camera.xml:vendor/etc/camera/msm8996_camera.xml
+etc/camera/s5k2m8sx_chromatix.xml:vendor/etc/camera/s5k2m8sx_chromatix.xml
+
 # Camera JNI
 lib64/libjni_makeupV2.so:vendor/lib64/libjni_makeupV2.so
 lib64/libjni_sharpshooter.so:vendor/lib64/libjni_sharpshooter.so
@@ -208,8 +249,15 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
+# Camera sensors - from z2_plus - OPR1.170623.032.4.0.199_181018a_ov8865.so
+vendor/lib/libmmcamera_ov8865.so
+vendor/lib/libmmcamera_s5k2m8sx.so
+
 # Camera eeproms
 vendor/lib/libmmcamera_gt24c08h_eeprom.so
+
+# Camera eeproms - from z2_plus - OPR1.170623.032.4.0.199_181018
+vendor/lib/libmmcamera_onsemi_cat24c64_eeprom.so|281544658c71f99e2791e8ab85fb4f3d02c7abef
 
 # Camera ov8865
 etc/camera/ov8865_chromatix.xml:vendor/etc/camera/ov8865_chromatix.xml
@@ -667,6 +715,9 @@ vendor/lib64/sensors.ssc.so|f4108878f452ff445bfee7d6f624e350353469e5
 vendor/lib/libsensor1.so|de27fcd2ab95788e09310c5f2cf58a0540afcfe3
 vendor/lib/libsensor_reg.so|9a3568dc423598886b7f16d91d76e53cd0220387
 vendor/lib/sensors.ssc.so|2b7c1996cc12e6fac7d1fa09c5dfe1c93a1311d9
+
+# Sensors - from z2_plus - OPR1.170623.032.4.0.199_181018
+vendor/etc/sensors/sensor_def_qcomdev.conf
 
 # Thermal - from op3 - PKQ1.181203.001
 vendor/bin/thermal-engine|b15c9e8fa54ebb15dfeb36c7fbc834a28b4c836e
